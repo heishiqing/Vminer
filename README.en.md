@@ -12,6 +12,10 @@ Download the latest package from [Releases](https://github.com/heishiqing/Vminer
 
 Extract the archive and run `Vminer.exe` from the root folder. On first launch, the app will ask you to read the software notes.
 
+## Community
+
+QQ group: `245770181`
+
 ## Current Support
 
 Coin: PRL
@@ -67,4 +71,3 @@ The client does not alter pool jobs and does not replace the user's wallet addre
 ## Disclaimer
 
 Make sure you have permission to run mining software on the device. Mining may increase power usage, hardware temperature, and device wear. Earnings, pool stability, and network connectivity are not guaranteed. Follow local laws, regulations, and platform rules.
-
