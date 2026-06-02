@@ -2,6 +2,14 @@
 
 [中文](README.md) | [English](README.en.md)
 
+## v0.1.1
+
+- Renamed the product UI to Vminer.
+- Added a clickable GitHub project homepage link in the software notes.
+- Moved the support/QR section to the first position in the software notes.
+- Made the software notes scroll area more obvious.
+- Kept the clean release layout: `Vminer.exe` at the root, helper programs in `bin/`, and no scattered runtime DLL files.
+
 ## v0.1.0
 
 - Added the Vminer Windows desktop manager.
@@ -19,4 +27,3 @@
 - Added Chinese and English UI support.
 - Added QR support section in the software notes.
 - Added background capability for server announcements, changelog, and future updates.
-
