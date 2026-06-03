@@ -21,6 +21,10 @@
 
 适用场景: 想挖 PRL 但不想折腾命令行 / 多矿池切换 / 显卡分配 / 加密代理.
 
+<div align="center">
+  <img src="docs/screenshot.png" width="820" alt="Vminer 控制台">
+</div>
+
 ## ✨ 核心特性
 
 **挖矿管理**

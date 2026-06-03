@@ -20,6 +20,10 @@ A Windows desktop manager that bundles **PRL miners + pools**. **No Docker, just
 
 For users who want to mine PRL without fighting CLI / switch pools easily / assign GPUs / use encrypted proxy.
 
+<div align="center">
+  <img src="docs/screenshot.png" width="820" alt="Vminer dashboard">
+</div>
+
 ## ✨ Features
 
 **Mining management**
