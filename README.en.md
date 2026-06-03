@@ -1,73 +1,96 @@
-# Vminer
+<div align="center">
 
-[中文](README.md) | [English](README.en.md)
+# ⛏️ Vminer
 
-Vminer is a Windows management tool for PRL mining. It bundles mining software into a ready-to-use desktop package, so Docker is not required. It helps users start, stop, monitor, and test mining connectivity across supported miners and pools.
+### One-stop Windows manager for PRL mining · Unzip and run
 
-> This is an early test release. Please read the in-app notes and compatibility information before mining.
+[![Release](https://img.shields.io/github/v/release/heishiqing/Vminer?color=0E7490&label=latest)](https://github.com/heishiqing/Vminer/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/heishiqing/Vminer/total?color=F59E0B)](https://github.com/heishiqing/Vminer/releases)
+[![License](https://img.shields.io/badge/license-MIT-F59E0B.svg)](#)
 
-## Download
+[中文](README.md) · [English](README.en.md)
 
-Download the latest package from [Releases](https://github.com/heishiqing/Vminer/releases).
+</div>
 
-Extract the archive and run `Vminer.exe` from the root folder. On first launch, the app will ask you to read the software notes.
+---
 
-## Community
+## 🎯 What is Vminer
 
-QQ group: `245770181`
+A Windows desktop manager that bundles **PRL miners + pools**. **No Docker, just unzip and run**.
 
-## Current Support
+For users who want to mine PRL without fighting CLI / switch pools easily / assign GPUs / use encrypted proxy.
 
-Coin: PRL
+## ✨ Features
 
-| Miner software | Supported pools | Status |
-| --- | --- | --- |
-| lpminer | LuckyPool, BaikalMine | Integrated |
-| AlphaMiner | AlphaPool | Integrated |
-| Pearl Miner | PearlHash | Waiting for the official Windows release and stable protocol support |
+**Mining management**
+- 🚀 **Run out of the box** — No Docker, no runtime, just unzip the .exe
+- 🔀 **One-click pool switching** — LuckyPool / BaikalMine / AlphaPool, all preconfigured
+- 🎛️ **Multi-GPU allocation** — `all` for all cards, or specify card IDs (e.g. 0,2,5)
+- 🛡️ **Encrypted proxy** — Falls back when direct connect is unstable; hides cleartext mining traffic from ISP
 
-GPU compatibility:
+**Monitoring & ops**
+- 📊 **Real-time status cards** — Online / hashrate / accepted / rejected shares / last update
+- 🌈 **Colorized logs** — Success / error / pool / GPU / program output color-coded
+- 🧪 **Connectivity test** — Verify config without starting mining
+- 🛎️ **Start with Windows + auto start + minimize to tray** — Set & forget
+- 💾 **Auto-save settings** — Critical settings lock while running
 
-- AMD GPUs are not supported in the current version.
-- AlphaMiner currently does not support RTX 50-series GPUs. Support depends on the official update.
-- RTX 30/40-series NVIDIA GPUs may be used according to verified environments.
+**Transparency**
+- 🔍 **Does not modify task packets or replace wallet address** — Users can inspect logs / process args / network connections
+- 📰 **Server announcements + changelog** — Pool/compatibility changes pushed in-app
 
-## Features
+## 📥 Download
 
-- Bundled mining software, no Docker installation required.
-- Start and stop mining processes.
-- Display online status, GPU count, GPU model, hashrate, accepted shares, rejected shares, and last update time.
-- Support multi-GPU rigs. Use `all` for all GPUs or specify GPU indexes.
-- Filter miners and pools by compatibility.
-- Support direct pool connection and encrypted proxy mode.
-- Connectivity test does not start mining.
-- Colorized runtime logs for success, errors, pools, GPUs, and program output.
-- Start with Windows.
-- Start automatically when the app opens.
-- Minimize to system tray.
-- Auto-save settings and lock relevant settings while mining is running.
-- Open the selected pool dashboard.
-- Reserved capability for server announcements, changelog, and background updates.
+<div align="center">
 
-## Connection Modes
+### [⬇ Download latest v0.1.1](https://github.com/heishiqing/Vminer/releases/latest)
 
-Direct: the miner connects directly to the selected pool. Use this mode first when connectivity is normal.
+</div>
 
-Encrypted proxy: the miner connects through the software's encrypted channel. Use this mode when direct connectivity fails, pool access is unstable, or you do not want plain mining traffic to be identified by your network provider.
+Unzip and double-click `Vminer.exe` in the root. First launch shows the user notes.
 
-## Client Transparency
+## 🪙 Compatibility
 
-The client does not alter pool jobs and does not replace the user's wallet address. Users can inspect settings, logs, process arguments, and network connections to verify the mining address and pool connection.
+| Miner | Supported pools | Status |
+|---|---|---|
+| **lpminer** | LuckyPool, BaikalMine | ✅ Integrated |
+| **AlphaMiner** | AlphaPool | ✅ Integrated |
+| Pearl Miner | PearlHash | 🟡 Waiting for official Windows build |
 
-## Quick Start
+GPU:
 
-1. Enter your PRL wallet address.
-2. Enter a worker name.
-3. Select miner software, pool, and node.
-4. Choose direct or encrypted proxy mode.
-5. Run the connectivity test.
-6. Click start after the test passes.
+| Type | Status |
+|---|---|
+| RTX 30/40 NVIDIA | ✅ Primary support |
+| RTX 50 NVIDIA | 🟡 lpminer ✅ / AlphaMiner pending official |
+| AMD | ❌ Not supported yet |
 
-## Disclaimer
+## 🚦 Five-step quickstart
 
-Make sure you have permission to run mining software on the device. Mining may increase power usage, hardware temperature, and device wear. Earnings, pool stability, and network connectivity are not guaranteed. Follow local laws, regulations, and platform rules.
+1. Enter PRL wallet address
+2. Enter worker name
+3. Pick miner / pool / node
+4. Pick direct or encrypted proxy
+5. Click **Test connectivity** → pass → click **Start**
+
+## 💬 Community / feedback
+
+| Channel | Link |
+|---|---|
+| QQ Group | **245770181** |
+| GitHub Issues | [Open an issue](https://github.com/heishiqing/Vminer/issues) |
+| Changelog | [CHANGELOG.md](CHANGELOG.md) |
+
+## ⚠️ Disclaimer
+
+Make sure you **have the right to run mining on this device**. Mining brings power consumption / heat / hardware wear. No guarantees on earnings, pool stability, or network connectivity. Comply with local laws and platform rules.
+
+## ❤ Support the author
+
+If Vminer saves you time, consider buying me a coffee ☕
+
+<img src="https://raw.githubusercontent.com/heishiqing/Vbot-B/main/static/afdian.jpg" width="240" alt="afdian - heishiqing">
+
+## 🌟 Other projects
+
+- [**Vbot-B**](https://github.com/heishiqing/Vbot-B) — Bilibili private message auto-reply bot

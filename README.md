@@ -1,73 +1,97 @@
-# Vminer
+<div align="center">
 
-[中文](README.md) | [English](README.en.md)
+# ⛏️ Vminer
 
-Vminer 是一个面向 PRL 挖矿的 Windows 管理工具。它聚合挖矿软件，无需安装 Docker，打开即用；支持多种挖矿软件及矿池，管理挖矿程序的启动、停止、状态监控和连通性检查。
+### PRL 挖矿 Windows 一站式管理工具 · 打开即用
 
-> 当前版本处于早期测试阶段，请先阅读软件说明和兼容性说明，再开始运行。
+[![Release](https://img.shields.io/github/v/release/heishiqing/Vminer?color=0E7490&label=latest)](https://github.com/heishiqing/Vminer/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/heishiqing/Vminer/total?color=F59E0B)](https://github.com/heishiqing/Vminer/releases)
+[![License](https://img.shields.io/badge/license-MIT-F59E0B.svg)](#)
+[![QQ Group](https://img.shields.io/badge/QQ_群-245770181-12B7F5)](https://qm.qq.com/q/245770181)
 
-## 下载
+[中文](README.md) · [English](README.en.md)
 
-请从 [Releases](https://github.com/heishiqing/Vminer/releases) 下载最新版压缩包。
+</div>
 
-下载后解压，运行根目录中的 `Vminer.exe`。首次打开会提示阅读软件说明。
+---
 
-## 交流
+## 🎯 Vminer 是什么
 
-QQ群：`245770181`
+聚合 **PRL 挖矿软件 + 矿池** 的 Windows 桌面端管理器. **无需 Docker, 解压即用**.
 
-## 当前支持
+适用场景: 想挖 PRL 但不想折腾命令行 / 多矿池切换 / 显卡分配 / 加密代理.
 
-币种：PRL
+## ✨ 核心特性
+
+**挖矿管理**
+- 🚀 **打开即用** — 不依赖 Docker, 不依赖运行时, 解压 .exe 直接跑
+- 🔀 **多矿池一键切换** — LuckyPool / BaikalMine / AlphaPool 配置好之间切换
+- 🎛️ **多显卡分配** — `all` 全显卡或指定显卡编号 (例如 0,2,5)
+- 🛡️ **加密代理** — 直连不稳时走加密通道, 不让明文挖矿流量被运营商识别
+
+**监控 & 运维**
+- 📊 **实时状态卡** — 在线/算力/接受份额/拒绝份额/最后更新
+- 🌈 **彩色日志** — 成功/错误/矿池/显卡/程序输出 分色显示
+- 🧪 **连通性测试** — 测网络不启动挖矿, 验配置先
+- 🛎️ **开机自启 + 自动开始 + 最小化托盘** — 适合长期挂机
+- 💾 **设置自动保存** — 运行中关键设置自动锁定防误改
+
+**透明性**
+- 🔍 **不篡改任务包, 不替换钱包地址** — 用户可自查日志/进程参数/网络连接
+- 📰 **服务器公告 + 更新日志** — 矿池/兼容性变化即时推送
+
+## 📥 下载
+
+<div align="center">
+
+### [⬇ 下载最新版 v0.1.1](https://github.com/heishiqing/Vminer/releases/latest)
+
+</div>
+
+解压后双击根目录 `Vminer.exe`. 首次启动会弹软件说明.
+
+## 🪙 兼容性
 
 | 挖矿软件 | 支持矿池 | 状态 |
-| --- | --- | --- |
-| lpminer | LuckyPool, BaikalMine | 已接入 |
-| AlphaMiner | AlphaPool | 已接入 |
-| Pearl Miner | PearlHash | 等待官方 Windows 版本和协议稳定后接入 |
+|---|---|---|
+| **lpminer** | LuckyPool, BaikalMine | ✅ 已接入 |
+| **AlphaMiner** | AlphaPool | ✅ 已接入 |
+| Pearl Miner | PearlHash | 🟡 等待官方 Windows 版本 |
 
-显卡兼容性：
+显卡:
 
-- 当前版本暂不支持 AMD 显卡。
-- AlphaMiner 目前不支持 RTX 50 系显卡，等待官方更新。
-- RTX 30/40 系 NVIDIA 显卡按已验证环境使用。
+| 类型 | 状态 |
+|---|---|
+| RTX 30/40 NVIDIA | ✅ 主力支持 |
+| RTX 50 NVIDIA | 🟡 lpminer ✅ / AlphaMiner 等官方 |
+| AMD | ❌ 暂不支持 |
 
-## 功能
+## 🚦 五步上手
 
-- 聚合挖矿软件，无需安装 Docker。
-- 启动、停止挖矿程序。
-- 显示在线状态、显卡数量、显卡型号、算力、接受份额、拒绝份额和最后更新时间。
-- 支持多显卡机器，可使用 `all` 启动全部显卡，也可指定显卡编号。
-- 矿池和挖矿软件按兼容性联动筛选。
-- 支持直连和加密代理两种连接方式。
-- 支持测试连通性，测试不会启动挖矿。
-- 运行日志使用彩色显示，方便区分成功、错误、矿池、显卡和程序输出。
-- 支持开机启动。
-- 支持软件启动后自动开始。
-- 支持最小化到系统托盘。
-- 设置会自动保存，运行中相关设置会锁定。
-- 支持打开所选矿池后台。
-- 保留服务器公告、更新日志和后台更新能力。
+1. 填 PRL 钱包地址
+2. 填矿机名
+3. 选挖矿软件 / 矿池 / 节点
+4. 选直连 or 加密代理
+5. 点 **测试连通性** → 通了点 **开始**
 
-## 连接方式
+## 💬 交流 / 反馈
 
-直连：软件直接连接所选矿池。连通性正常时，建议优先使用直连。
+| 渠道 | 入口 |
+|---|---|
+| QQ 群 | **245770181** |
+| GitHub Issues | [提 issue](https://github.com/heishiqing/Vminer/issues) |
+| 更新日志 | [CHANGELOG.md](CHANGELOG.md) |
 
-加密代理：通过软件的加密通道连接矿池。直连失败、矿池访问不稳定，或不想让明文挖矿流量被运营商识别时，可以选择加密代理。
+## ⚠️ 免责声明
 
-## 客户端透明性
+请确认你**有权在当前设备上运行挖矿程序**. 挖矿带来电力消耗 / 硬件温度上升 / 设备损耗风险. 收益、矿池稳定性、网络连通性**不做保证**. 请遵守所在地法律法规和平台规则.
 
-客户端不篡改矿池任务包，不替换用户钱包地址。用户可以自行检查设置、运行日志、进程参数和网络连接，确认挖矿地址和矿池连接是否一致。
+## ❤ 支持作者
 
-## 使用提示
+如果 Vminer 帮你省了时间, 欢迎请作者一杯咖啡 ☕
 
-1. 填写 PRL 钱包地址。
-2. 填写矿机名。
-3. 选择挖矿软件、矿池和节点。
-4. 选择直连或加密代理。
-5. 点击测试连通性。
-6. 测试正常后点击开始。
+<img src="https://raw.githubusercontent.com/heishiqing/Vbot-B/main/static/afdian.jpg" width="240" alt="爱发电 - heishiqing">
 
-## 免责声明
+## 🌟 作者其他项目
 
-请确认你有权在当前设备上运行挖矿程序。挖矿可能带来电力消耗、硬件温度上升和设备损耗风险。收益、矿池稳定性和网络连通性不做保证。请遵守所在地法律法规和平台规则。
+- [**Vbot-B**](https://github.com/heishiqing/Vbot-B) — B 站私信自动回复机器人
