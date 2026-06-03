@@ -1,100 +1,112 @@
 <div align="center">
 
-# ⛏️ Vminer
+# Vminer
 
-### One-stop Windows manager for PRL mining · Unzip and run
+### One-stop Windows manager for PRL mining. Unzip and run.
 
 [![Release](https://img.shields.io/github/v/release/heishiqing/Vminer?color=0E7490&label=latest)](https://github.com/heishiqing/Vminer/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/heishiqing/Vminer/total?color=F59E0B)](https://github.com/heishiqing/Vminer/releases)
-[![License](https://img.shields.io/badge/license-MIT-F59E0B.svg)](#)
+[![QQ Group](https://img.shields.io/badge/QQ_Group-245770181-12B7F5)](#)
 
-[中文](README.md) · [English](README.en.md)
+[中文](README.md) | [English](README.en.md)
 
 </div>
 
 ---
 
-## 🎯 What is Vminer
+## What is Vminer
 
-A Windows desktop manager that bundles **PRL miners + pools**. **No Docker, just unzip and run**.
+Vminer is a Windows desktop manager for PRL mining. It bundles miner and pool configuration into a simple desktop app. No Docker is required. Download, unzip, and run.
 
-For users who want to mine PRL without fighting CLI / switch pools easily / assign GPUs / use encrypted proxy.
+It is designed for Windows users who want easier pool switching, GPU selection, status monitoring, and readable runtime logs.
 
 <div align="center">
   <img src="docs/screenshot.png" width="820" alt="Vminer dashboard">
 </div>
 
-## ✨ Features
+## Features
 
 **Mining management**
-- 🚀 **Run out of the box** — No Docker, no runtime, just unzip the .exe
-- 🔀 **One-click pool switching** — LuckyPool / BaikalMine / AlphaPool, all preconfigured
-- 🎛️ **Multi-GPU allocation** — `all` for all cards, or specify card IDs (e.g. 0,2,5)
-- 🛡️ **Encrypted proxy** — Falls back when direct connect is unstable; hides cleartext mining traffic from ISP
 
-**Monitoring & ops**
-- 📊 **Real-time status cards** — Online / hashrate / accepted / rejected shares / last update
-- 🌈 **Colorized logs** — Success / error / pool / GPU / program output color-coded
-- 🧪 **Connectivity test** — Verify config without starting mining
-- 🛎️ **Start with Windows + auto start + minimize to tray** — Set & forget
-- 💾 **Auto-save settings** — Critical settings lock while running
+- Unzip and run, no Docker required.
+- Switch between supported pool configurations.
+- Use all GPUs or specify GPU IDs.
+- Supports direct connection and encrypted proxy mode.
+- Locks key settings while running, then unlocks them after stopping.
+
+**Status and logs**
+
+- Shows online status, GPU count, hashrate, accepted shares, rejected shares, and mining state.
+- Shows miner list with worker name, software, pool, GPU, hashrate, shares, and last update.
+- Colorized runtime logs for easier troubleshooting.
+- Connectivity test checks the setup without starting mining.
+
+**User experience**
+
+- Settings are saved automatically.
+- Supports start with Windows.
+- Supports auto start after opening the app.
+- Supports minimizing to the system tray, disabled by default.
+- Includes software notes, changelog, and pool dashboard shortcut.
 
 **Transparency**
-- 🔍 **Does not modify task packets or replace wallet address** — Users can inspect logs / process args / network connections
-- 📰 **Server announcements + changelog** — Pool/compatibility changes pushed in-app
 
-## 📥 Download
+- The client does not modify pool task packets.
+- The client does not replace the user's wallet address.
+- Users can inspect settings, runtime logs, process arguments, and network connections.
+
+## Download
 
 <div align="center">
 
-### [⬇ Download latest v0.1.1](https://github.com/heishiqing/Vminer/releases/latest)
+### [Download latest v0.1.4](https://github.com/heishiqing/Vminer/releases/latest)
 
 </div>
 
-Unzip and double-click `Vminer.exe` in the root. First launch shows the user notes.
+Download the zip, unzip it, and double-click `Vminer.exe` in the root folder. The software notes are shown on first launch.
 
-## 🪙 Compatibility
+## Compatibility
 
 | Miner | Supported pools | Status |
 |---|---|---|
-| **lpminer** | LuckyPool, BaikalMine | ✅ Integrated |
-| **AlphaMiner** | AlphaPool | ✅ Integrated |
-| Pearl Miner | PearlHash | 🟡 Waiting for official Windows build |
+| lpminer | LuckyPool, BaikalMine | Integrated |
+| AlphaMiner | AlphaPool | Integrated |
+| Pearl Miner | PearlHash | Waiting for official Windows build |
 
-GPU:
+GPU support:
 
-| Type | Status |
+| GPU type | Status |
 |---|---|
-| RTX 30/40 NVIDIA | ✅ Primary support |
-| RTX 50 NVIDIA | 🟡 lpminer ✅ / AlphaMiner pending official |
-| AMD | ❌ Not supported yet |
+| NVIDIA RTX 30/40 series | Recommended |
+| NVIDIA RTX 50 series | Compatibility notes added. Check driver and miner support in the app notes. |
+| AMD | Not supported yet |
 
-## 🚦 Five-step quickstart
+## Quick start
 
-1. Enter PRL wallet address
-2. Enter worker name
-3. Pick miner / pool / node
-4. Pick direct or encrypted proxy
-5. Click **Test connectivity** → pass → click **Start**
+1. Enter your PRL wallet address.
+2. Enter a worker name.
+3. Select miner, pool, and node.
+4. Select direct or encrypted proxy mode.
+5. Click "Test connectivity"; if it passes, click "Start".
 
-## 💬 Community / feedback
+## Community and feedback
 
 | Channel | Link |
 |---|---|
-| QQ Group | **245770181** |
+| QQ Group | 245770181 |
 | GitHub Issues | [Open an issue](https://github.com/heishiqing/Vminer/issues) |
 | Changelog | [CHANGELOG.md](CHANGELOG.md) |
 
-## ⚠️ Disclaimer
+## Disclaimer
 
-Make sure you **have the right to run mining on this device**. Mining brings power consumption / heat / hardware wear. No guarantees on earnings, pool stability, or network connectivity. Comply with local laws and platform rules.
+Make sure you have the right to run mining software on the current device. Mining may increase power consumption, hardware temperature, and device wear. Earnings, pool stability, and network connectivity are not guaranteed. Follow local laws, regulations, and platform rules.
 
-## ❤ Support the author
+## Support the author
 
-If Vminer saves you time, consider buying me a coffee ☕
+If Vminer saves you time, consider supporting the author.
 
 <img src="https://raw.githubusercontent.com/heishiqing/Vbot-B/main/static/afdian.jpg" width="240" alt="afdian - heishiqing">
 
-## 🌟 Other projects
+## Other projects
 
-- [**Vbot-B**](https://github.com/heishiqing/Vbot-B) — Bilibili private message auto-reply bot
+- [Vbot-B](https://github.com/heishiqing/Vbot-B): Bilibili private message auto-reply bot.

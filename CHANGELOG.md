@@ -1,29 +1,38 @@
-# Changelog
+# 更新日志 / Changelog
 
 [中文](README.md) | [English](README.en.md)
 
+## v0.1.4
+
+- 优化更新日志展示，只保留用户可读的公开内容。
+- 修复重复打开软件时可能出现多个闲置窗口的问题。
+- 优化关闭软件后的后台清理，避免程序已关闭但任务仍在运行。
+- 新用户默认不勾选“最小化到右下角”。
+- 优化 RTX 50 系列显卡的启动检查和兼容提示。
+- 优化公告和版本检查日志，减少重复刷屏。
+
+## v0.1.3
+
+- 修复重复打开软件时的处理，避免出现多个闲置窗口。
+- 优化关闭软件后的后台清理。
+- 新用户默认不勾选“最小化到右下角”。
+- 优化 RTX 50 系列显卡兼容性提示。
+- 优化公告和版本检查日志，减少重复刷屏。
+
 ## v0.1.1
 
-- Renamed the product UI to Vminer.
-- Added a clickable GitHub project homepage link in the software notes.
-- Moved the support/QR section to the first position in the software notes.
-- Made the software notes scroll area more obvious.
-- Kept the clean release layout: `Vminer.exe` at the root, helper programs in `bin/`, and no scattered runtime DLL files.
+- 将产品名称统一为 Vminer。
+- 软件说明中加入 GitHub 项目主页入口。
+- 调整软件说明中的支持作者区域。
+- 优化发布包结构，根目录保留 `Vminer.exe`，运行依赖集中在 `bin/`。
 
 ## v0.1.0
 
-- Added the Vminer Windows desktop manager.
-- Added bundled miner startup and stop controls.
-- Added PRL wallet, worker name, miner, pool, node, and connection mode settings.
-- Added compatibility filtering between miner software and mining pools.
-- Added direct and encrypted proxy connection modes.
-- Added connectivity test without starting mining.
-- Added local status cards for online rigs, GPU count, hashrate, accepted shares, rejected shares, and mining state.
-- Added miner list with status, worker, software, pool, GPU, hashrate, shares, and last update.
-- Added colorized runtime logs.
-- Added start with Windows, auto start after opening, and minimize to tray options.
-- Added pool dashboard shortcut.
-- Added first-launch software notes.
-- Added Chinese and English UI support.
-- Added QR support section in the software notes.
-- Added background capability for server announcements, changelog, and future updates.
+- 发布 Vminer Windows 桌面管理器。
+- 支持钱包地址、矿机名、挖矿软件、矿池、节点和连接方式设置。
+- 支持矿池和挖矿软件兼容性联动筛选。
+- 支持直连和加密代理连接方式。
+- 支持连通性测试。
+- 支持状态卡、矿机列表和彩色运行日志。
+- 支持开机启动、启动后自动开始和最小化到托盘。
+- 支持中英文界面。
