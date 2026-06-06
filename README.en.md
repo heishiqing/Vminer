@@ -16,75 +16,55 @@
 
 ## What is Vminer
 
-Vminer is a Windows desktop manager for PRL mining. It bundles miner and pool configuration into a simple desktop app. It runs natively on Windows, with no WSL2 and no Docker required. Download, unzip, and run.
+Vminer is a Windows desktop manager for PRL mining. Unzip the package and double-click to run. It supports single-machine mining and LAN group control, including start, stop, status monitoring, connectivity checks, and pool dashboard shortcuts.
 
-It is designed for Windows users who want easier pool switching, GPU selection, status monitoring, readable runtime logs, or LAN-based management for multiple machines.
+It is designed for users who want quick pool setup, miner switching, hashrate and share display, or centralized management for multiple Windows machines on the same LAN.
 
 <div align="center">
   <img src="docs/screenshot.png" width="820" alt="Vminer dashboard">
 </div>
 
-## Features
-
-**Mining management**
-
-- Unzip and run, no Docker required.
-- Native Windows app, no WSL2 required.
-- Switch between supported miners and pool configurations.
-- Use all GPUs or specify GPU IDs.
-- Supports direct connection and encrypted proxy mode.
-- Locks key settings while running, then unlocks them after stopping.
-- Supports Single Mode and LAN Group Control.
-
-**Status and logs**
-
-- Shows online status, GPU count, hashrate, accepted shares, rejected shares, and mining state.
-- Shows miner list with worker name, software, pool, GPU, hashrate, shares, and last update.
-- Colorized runtime logs for easier troubleshooting.
-- Connectivity test checks the setup without starting mining.
-- Group Control shows online state, running state, silent state, GPU, hashrate, shares, and error state across multiple machines.
-
-**User experience**
-
-- Settings are saved automatically.
-- Supports start with Windows.
-- Supports auto start after opening the app.
-- Supports Background Silent Mode for scenarios where mining should pause on user activity and resume when idle.
-- Includes software notes, changelog, and pool dashboard shortcut.
-
-**Transparency**
-
-- The client does not modify pool task packets.
-- The client does not replace the user's wallet address.
-- Users can inspect settings, runtime logs, process arguments, and network connections.
-
 ## Download
 
 <div align="center">
 
-### [Download latest v0.1.5](https://github.com/heishiqing/Vminer/releases/latest)
+### [Download latest v0.1.6](https://github.com/heishiqing/Vminer/releases/latest)
 
 </div>
 
-Download the zip, unzip it, and double-click `Vminer.exe` in the root folder. Help is available in the app, and the package includes `使用说明.md` and `User Guide.md`.
+Download the zip, unzip it, and double-click `Vminer.exe` in the root folder. The package includes `使用说明.md` and `User Guide.md`.
 
-## Compatibility
+## Features
 
-| Miner | Supported pools | Status |
-|---|---|---|
-| lpminer | LuckyPool, BaikalMine | Integrated |
-| AlphaMiner NVIDIA | AlphaPool | Integrated |
-| AlphaMiner AMD | AlphaPool | Integrated, small-batch testing recommended |
-| SRBMiner | LuckyPool, HeroMiners, Suprnova, BaikalMine | Integrated |
+- Single Mode: run mining on the current Windows machine.
+- Group Control: manage multiple Vminer machines on the same LAN.
+- Status display: online state, GPU count, hashrate, accepted shares, rejected shares, and mining state.
+- Runtime logs: miner output, pool connection state, and program messages.
+- Pool dashboard shortcuts.
+- Auto run: start with Windows, auto mine after launch, and background silent mode.
+- Power setting: NVIDIA power-limit percentage setting.
 
-GPU support:
+## GPU compatibility
 
-| GPU type | Status |
-|---|---|
-| NVIDIA RTX 30/40 series | Recommended |
-| NVIDIA RTX 50 series | AlphaPool / A Pool is not currently supported. Use a compatible combination while waiting for the official AlphaMiner update. |
-| AMD Radeon | AlphaMiner AMD / AlphaPool support has been added. Small-batch testing is recommended. |
-| Intel Arc | Not supported yet |
+Vminer filters available miners and pools by detected GPU.
+
+**NVIDIA:** supported by the currently selectable mining software.
+
+**AMD:** temporarily unavailable; waiting for miner software updates.
+
+For Group Control, group workers by GPU model before applying settings.
+
+## Supported software, pools, and coin
+
+**Coin:** PRL
+
+**lpminer:** LuckyPool, BaikalMine
+
+**SRBMiner:** LuckyPool, HeroMiners, Suprnova, BaikalMine
+
+**AlphaMiner:** AlphaPool
+
+**AMD:** waiting for miner software updates
 
 ## Quick start
 
@@ -96,9 +76,9 @@ GPU support:
 
 ## Group Control
 
-Group Control manages multiple Vminer machines on the same LAN. Keep only one controller machine in a LAN. Workers connect to the controller and report online state, running state, GPU, hashrate, shares, version, and error reason.
+Group Control manages multiple Vminer machines on the same LAN. Keep only one controller machine in a LAN. Workers connect to the controller and report online state, GPU, software, pool, hashrate, shares, and error state.
 
-For mixed-GPU environments, apply settings in batches. Wait for workers to come online and report GPU models, then group machines by compatibility, such as RTX 30/40, RTX 50, and AMD. Apply compatible miner and pool settings to each group separately.
+For mixed-GPU environments, group workers by compatibility first, then apply settings and start in batches.
 
 ## Community and feedback
 
@@ -114,9 +94,11 @@ Make sure you have the right to run mining software on the current device. Minin
 
 ## Support the author
 
-If Vminer saves you time, consider supporting the author.
+If you like Vminer, consider supporting the author on Afdian.
 
-<img src="https://raw.githubusercontent.com/heishiqing/Vbot-B/main/static/afdian.jpg" width="240" alt="afdian - heishiqing">
+<img src="https://raw.githubusercontent.com/heishiqing/Vbot-B/main/static/afdian.jpg" width="240" alt="Afdian - heishiqing">
+
+Afdian
 
 ## Other projects
 
