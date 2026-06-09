@@ -28,7 +28,7 @@ It is designed for users who want quick pool setup, miner switching, hashrate an
 
 <div align="center">
 
-### [Download latest v0.1.6](https://github.com/heishiqing/Vminer/releases/latest)
+### [Download latest v0.1.7](https://github.com/heishiqing/Vminer/releases/latest)
 
 </div>
 
@@ -40,9 +40,11 @@ Download the zip, unzip it, and double-click `Vminer.exe` in the root folder. Th
 - Group Control: manage multiple Vminer machines on the same LAN.
 - Status display: online state, GPU count, hashrate, accepted shares, rejected shares, and mining state.
 - Runtime logs: miner output, pool connection state, and program messages.
-- Pool dashboard shortcuts.
+- Pool dashboard in-app: view pool-side balance, paid, shares, and online rigs inside the app (no VPN needed in mainland China); pool dashboard shortcuts also available.
+- Live price in-app: view the real-time PRL price inside the app (no VPN needed in mainland China).
 - Auto run: start with Windows, auto mine after launch, and background silent mode.
-- Power setting: NVIDIA power-limit percentage setting.
+- Power setting: NVIDIA power-limit percentage setting, re-checked every 5 minutes and re-applied if it drifts.
+- Worker name prefix: add an optional prefix to worker names to tell machines apart.
 
 ## GPU compatibility
 
