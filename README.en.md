@@ -1,6 +1,8 @@
 <div align="center">
 
-# ⛏️ Vminer
+<img src="docs/icon.png" width="96" alt="Vminer" />
+
+# Vminer
 
 ### One-stop Windows manager for PRL mining. Unzip and run.
 

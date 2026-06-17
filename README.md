@@ -1,6 +1,8 @@
 <div align="center">
 
-# ⛏️ Vminer
+<img src="docs/icon.png" width="96" alt="Vminer" />
+
+# Vminer
 
 ### PRL 挖矿 Windows 一站式管理工具，解压即用
 
