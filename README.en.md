@@ -23,20 +23,20 @@ Vminer is a Windows desktop manager for PRL mining. Unzip the package and double
 It is designed for users who want quick pool setup, miner switching, hashrate and share display, or centralized management for multiple Windows machines on the same LAN.
 
 <div align="center">
-  <img src="docs/screenshot.png" width="820" alt="Vminer dashboard">
+  <img src="docs/screenshot.en.png" width="820" alt="Vminer dashboard">
 </div>
 
 ## 📥 Download
 
 <div align="center">
 
-### [⬇️ Download latest v0.2.0](https://github.com/heishiqing/Vminer/releases/latest)
+### [⬇️ Download latest v0.2.1](https://github.com/heishiqing/Vminer/releases/latest)
 
 </div>
 
 Download the zip, unzip it, and double-click `Vminer.exe` in the root folder. The package includes `使用说明.md` and `User Guide.md`.
 
-> 🆕 **What's new in v0.2.0**: fixed the auto-update crash · SRBMiner upgraded to 3.3.9 (higher GPU hashrate) · added Kryptex (K) pool · smart node selection by HK → SG → US → EU priority · refreshed UI. Full log in [CHANGELOG](CHANGELOG.md).
+> 🆕 **What's new in v0.2.1**: added PearlFortune / PearlHash / 2Miners pools · mining kernels fully upgraded (on-demand download, slimmer package) · NVIDIA-only build · new GPU fan control · new "Related Sites" page · pool dashboard upgraded to "Pool Balance" lookup. Full log in [CHANGELOG](CHANGELOG.md).
 
 ## ✨ Features
 
@@ -44,19 +44,20 @@ Download the zip, unzip it, and double-click `Vminer.exe` in the root folder. Th
 - **Group Control**: manage multiple Vminer machines on the same LAN.
 - **Status display**: online state, GPU count, hashrate, accepted shares, rejected shares, and mining state at a glance.
 - **Runtime logs**: miner output, pool connection state, and program messages.
-- **Pool dashboard in-app**: view pool-side balance, paid, shares, and online rigs inside the app (no VPN needed in mainland China); pool dashboard shortcuts also available.
+- **Pool balance lookup**: view pool-side balance, paid, shares, and online rigs inside the app (no VPN needed in mainland China); pool dashboard shortcuts also available.
+- **Related Sites**: one-click access to the official site, wallet, block explorer, and pool websites.
 - **Live price in-app**: view the real-time PRL price inside the app (no VPN needed in mainland China).
 - **Auto run**: start with Windows, auto mine after launch, and background silent mode.
-- **Power setting**: NVIDIA power-limit percentage setting, re-checked every 5 minutes and re-applied if it drifts.
+- **Power & fan**: NVIDIA power-limit percentage setting (re-checked every 5 minutes and re-applied if it drifts), plus fan-speed control.
 - **Worker name prefix**: add an optional prefix to worker names to tell machines apart.
 
 ## 🖥️ GPU compatibility
 
 Vminer filters available miners and pools by detected GPU.
 
-**NVIDIA:** supported by the currently selectable mining software.
+**NVIDIA:** fully supported — all current mining software and pools are available.
 
-**AMD:** temporarily unavailable; waiting for miner software updates.
+> This build is NVIDIA-only, focused on N-card efficiency and stability.
 
 For Group Control, group workers by GPU model before applying settings.
 
@@ -64,13 +65,9 @@ For Group Control, group workers by GPU model before applying settings.
 
 **Coin:** PRL
 
-**lpminer:** LuckyPool
+**Pools:** AlphaPool, LuckyPool, Kryptex, HeroMiners, PearlFortune, PearlHash, 2Miners
 
-**SRBMiner (3.3.9):** LuckyPool, HeroMiners, Kryptex
-
-**AlphaMiner:** AlphaPool
-
-**AMD:** waiting for miner software updates
+**Mining kernels:** several mainstream PRL kernels built in (SRBMiner, AlphaMiner, WildRig, etc., all latest versions), auto-matched to the selected pool; kernels are downloaded on demand at first launch to keep the package slim.
 
 ## 🚀 Quick start
 

@@ -30,13 +30,13 @@ Vminer 是一个 PRL 挖矿 Windows 桌面管理器，解压后双击即可使�
 
 <div align="center">
 
-### [⬇️ 下载最新版 v0.2.0](https://github.com/heishiqing/Vminer/releases/latest)
+### [⬇️ 下载最新版 v0.2.1](https://github.com/heishiqing/Vminer/releases/latest)
 
 </div>
 
 下载压缩包后解压，双击根目录 `Vminer.exe` 启动。压缩包内包含 `使用说明.md` 和 `User Guide.md`。
 
-> 🆕 **v0.2.0 更新**：修复自动更新闪退 · SRBMiner 升级 3.3.9（GPU 算力提升）· 新增 Kryptex（K）矿池 · 节点按 港 → 新 → 美 → 欧 智能优选 · 界面焕新。完整记录见 [CHANGELOG](CHANGELOG.md)。
+> 🆕 **v0.2.1 更新**：新增 PearlFortune / PearlHash / 2Miners 矿池 · 挖矿内核全面升级（内核按需下载、安装包更精简）· NVIDIA 专版 · 新增显卡风扇控制 · 新增「相关网站」页 · 矿池后台查询升级为「矿池余额查询」。完整记录见 [CHANGELOG](CHANGELOG.md)。
 
 ## ✨ 功能
 
@@ -44,19 +44,20 @@ Vminer 是一个 PRL 挖矿 Windows 桌面管理器，解压后双击即可使�
 - **群控模式**：管理同一局域网内的多台 Vminer 机器。
 - **状态显示**：在线状态、显卡数量、算力、接受份额、拒绝份额和运行状态一目了然。
 - **日志查看**：显示运行日志、矿池连接和挖矿程序输出。
-- **矿池后台**：软件内直接查看矿池侧余额、已支付、份额、在线矿机数（中国大陆无需梯子），也可打开矿池后台网页。
+- **矿池余额查询**：软件内直接查看矿池侧余额、已支付、份额、在线矿机数（中国大陆无需梯子），也可打开矿池后台网页。
+- **相关网站**：一键直达官网、钱包、区块浏览器、各大矿池官网。
 - **实时币价**：软件内查看实时 PRL 币价（中国大陆无需梯子）。
 - **自动运行**：支持开机启动、软件启动后自动挖矿、后台静默模式。
-- **功耗设置**：支持 NVIDIA 显卡功耗百分比设置，每 5 分钟自动巡查、漂移则按设置重新固化。
+- **功耗与风扇**：支持 NVIDIA 显卡功耗百分比设置（每 5 分钟自动巡查、漂移则按设置重新固化），以及风扇转速控制。
 - **矿机名前缀**：可给矿机名加可选前缀，方便区分多台机器。
 
 ## 🖥️ 显卡兼容
 
 软件会按显卡自动筛选可用软件和矿池。
 
-**NVIDIA：** 当前可选挖矿软件均支持。
+**NVIDIA：** 全系支持，当前所有挖矿软件和矿池均可用。
 
-**AMD：** 暂不兼容，等待挖矿软件更新。
+> 本版本为 NVIDIA 专版，聚焦 N 卡能效与稳定性优化。
 
 群控下建议按显卡型号分组下发。
 
@@ -64,13 +65,9 @@ Vminer 是一个 PRL 挖矿 Windows 桌面管理器，解压后双击即可使�
 
 **币种：** PRL
 
-**lpminer：** LuckyPool
+**矿池：** AlphaPool、LuckyPool、Kryptex、HeroMiners、PearlFortune、PearlHash、2Miners
 
-**SRBMiner（3.3.9）：** LuckyPool、HeroMiners、Kryptex
-
-**AlphaMiner：** AlphaPool
-
-**AMD：** 等待软件更新
+**挖矿内核：** 内置多款主流 PRL 内核（SRBMiner、AlphaMiner、WildRig 等，均为最新版），按所选矿池自动匹配；内核首次启动按需下载，安装包更精简。
 
 ## 🚀 快速上手
 
