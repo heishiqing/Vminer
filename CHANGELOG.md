@@ -2,88 +2,28 @@
 
 [中文](README.md) | [English](README.en.md)
 
-## v0.2.1
+## v0.2.3
 
-- 新增矿池：PearlFortune、PearlHash、2Miners，加上已有的 AlphaPool、LuckyPool、Kryptex、HeroMiners，矿池数据均可在客户端内查看。
-- 挖矿内核全面升级：SRBMiner、AlphaMiner、WildRig 等核心同步到最新版，PRL 算力进一步提升；内核改为首次启动按需下载，安装包更精简、更新更省心。
-- NVIDIA 专版：聚焦 N 卡优化，移除 AMD 相关组合。
-- 新增显卡风扇控制（NVAPI）：超频时可控制风扇转速，温度更稳、噪音更可控。
-- 新增「相关网站」页：一键直达官网、钱包、区块浏览器、各大矿池官网。
-- 矿池后台查询升级为「矿池余额查询」：输入钱包即可查各矿池余额与在线矿机数。
-- 挖矿稳定性增强：修复个别矿池长时间挖矿可能卡顿的问题，长跑更稳。
-- 界面优化：修复悬浮窗、中文显示等细节，体验更顺手。
+- 新增 MDL 合并挖矿支持：在支持合并挖矿的矿池中，可同时填写 PRL 与 MDL 钱包进行挖矿。
+- 优化 HeroMiners、LuckyPool、AlphaPool、PearlHash 等矿池的兼容性与稳定性。
+- 优化断线重连、运行日志和后台清理体验。
+- 优化新版显卡与多矿工内核的启动稳定性。
 
-## v0.2.0
+English:
 
-- 修复自动更新闪退：旧版下载新包后无法打开的问题已彻底解决，今后可平滑更新。
-- 更新挖矿软件：SRBMiner 升级到 3.3.9（PRL 算法 GPU 算力提升），AlphaMiner 同步到最新版。
-- 新增兼容 Kryptex（K）矿池，可在客户端内查看 Kryptex 矿池数据。
-- 节点智能优选：默认按 香港 → 新加坡 → 美国 → 欧洲 优先级，自动连接延迟最低的健康节点。
-- 群控模式简化：节点自动按优先级选择，无需手动选节点。
-- 界面焕新：全新项目图标，精简帮助说明。
+- Added MDL merge-mining support for pools that support PRL + MDL mining.
+- Improved compatibility and stability for HeroMiners, LuckyPool, AlphaPool, PearlHash, and more.
+- Improved reconnect behavior, runtime logs, and background cleanup.
+- Improved startup stability for newer GPUs and multiple mining kernels.
 
-## v0.1.7
+## v0.2.2
 
-- 新增矿机名前缀：可给矿机名加可选前缀（前缀-后缀，后缀默认机器名），方便区分多台机器。
-- 软件内查看矿池后台：在软件内查看矿池侧余额、已支付、份额、在线矿机数，中国大陆无需梯子。
-- 软件内查看实时币价：在软件内查看实时 PRL 币价，中国大陆无需梯子。
-- 更新挖矿软件到最新版（AlphaMiner、SRBMiner）。
-- 功耗设置固化：每 5 分钟巡查显卡实际功耗是否与设置一致，漂移则自动按设置重新应用，功耗墙不再被系统悄悄重置。
+- 修复部分多卡 / Windows 10 环境中挖矿启动后闪退的问题。
+- AlphaMiner 内核新增 1.8.3 可选版，默认仍保留稳定版。
+- 优化安装包体积与更新器体验。
 
-## v0.1.6
+English:
 
-- 优化单机模式和群控模式界面显示。
-- 增加群控节点选择显示，节点会随已勾选机器和矿池设置刷新。
-- 优化 SRBMiner 运行状态和份额显示。
-- 优化断网后的重试和恢复逻辑。
-- 优化显卡兼容说明，移除容易误选的高难度节点。
-- 更新使用说明。
-- 修复正式包缺少运行配置导致本地服务刷新 500 的问题。
-
-## v0.1.5
-
-- 新增局域网群控模式，可管理同一局域网内多台 Vminer 机器。
-- 新增后台静默模式，支持检测到鼠标或键盘操作时暂停，空闲后自动恢复。
-- 新增 SRBMiner 接入，扩展 LuckyPool、HeroMiners、Suprnova、BaikalMine 等矿池选择。
-- 新增 AlphaMiner AMD 包接入，支持 AMD Radeon 对应组合，建议先小批量验证。
-- 优化显卡兼容筛选，软件和矿池会按本机或被控机显卡自动过滤。
-- 优化说明页面和压缩包内使用说明，新增英文版 `User Guide.md`。
-- 优化运行日志显示，减少无关刷屏并保留关键连接、份额和错误信息。
-- 修复网络或矿池临时断开后的重试和恢复体验。
-
-## v0.1.4
-
-- 优化更新日志展示，只保留用户可读的公开内容。
-- 修复重复打开软件时可能出现多个闲置窗口的问题。
-- 优化关闭软件后的后台清理，避免程序已关闭但任务仍在运行。
-- 新用户默认不勾选“最小化到右下角”。
-- 优化 RTX 50 系列显卡的启动检查和兼容提示。
-- 优化公告和版本检查日志，减少重复刷屏。
-- 修复解压后根目录主程序图标显示为默认图标的问题。
-- 软件说明中加入 QQ 群信息。
-
-## v0.1.3
-
-- 修复重复打开软件时的处理，避免出现多个闲置窗口。
-- 优化关闭软件后的后台清理。
-- 新用户默认不勾选“最小化到右下角”。
-- 优化 RTX 50 系列显卡兼容性提示。
-- 优化公告和版本检查日志，减少重复刷屏。
-
-## v0.1.1
-
-- 将产品名称统一为 Vminer。
-- 软件说明中加入 GitHub 项目主页入口。
-- 调整软件说明中的支持作者区域。
-- 优化发布包结构，根目录保留 `Vminer.exe`，运行依赖集中在 `bin/`。
-
-## v0.1.0
-
-- 发布 Vminer Windows 桌面管理器。
-- 支持钱包地址、矿机名、挖矿软件、矿池、节点和连接方式设置。
-- 支持矿池和挖矿软件兼容性联动筛选。
-- 支持直连和加密代理连接方式。
-- 支持连通性测试。
-- 支持状态卡、矿机列表和彩色运行日志。
-- 支持开机启动、启动后自动开始和最小化到托盘。
-- 支持中英文界面。
+- Fixed a startup crash seen on some multi-GPU / Windows 10 environments.
+- Added AlphaMiner 1.8.3 as an optional kernel while keeping the stable default.
+- Reduced package size and improved the updater experience.

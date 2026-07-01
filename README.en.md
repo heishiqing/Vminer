@@ -30,13 +30,13 @@ It is designed for NVIDIA users who want quick pool setup, kernel switching, has
 
 <div align="center">
 
-### [⬇️ Download latest v0.2.1](https://github.com/heishiqing/Vminer/releases/latest)
+### [⬇️ Download latest v0.2.3](https://github.com/heishiqing/Vminer/releases/latest)
 
 </div>
 
 Download the zip, unzip it, and double-click `Vminer.exe` in the root folder. The package includes `使用说明.md` and `User Guide.md`.
 
-> 🆕 **What's new in v0.2.1**: added PearlFortune / PearlHash / 2Miners pools · mining kernels fully upgraded (on-demand download, slimmer package) · NVIDIA-only build · new GPU fan control · new "Related Sites" page · pool balance lookup · refreshed dark UI. Full log in [CHANGELOG](CHANGELOG.md).
+> 🆕 **What's new in v0.2.3**: added MDL merge-mining support · improved compatibility with HeroMiners, LuckyPool, AlphaPool, PearlHash and more · improved reconnects, logs, and background cleanup · better startup stability for newer GPUs and multiple mining kernels. Full log in [CHANGELOG](CHANGELOG.md).
 
 ## ✨ Features
 
