@@ -38,6 +38,8 @@ Download the zip, unzip it, and double-click `Vminer.exe` in the root folder. Th
 
 > 🆕 **What's new in v0.2.4**: fixed AlphaPool dual-mining startup and stability issues · added dynamic kernel-version refresh so newly published kernels can appear in the client · added WildRig 0.49.1 and TW 2.3.1 as selectable kernels · fixed fan settings being overwritten when the performance master switch is off · improved crash-recovery protection after repeated abnormal exits. Full log in [CHANGELOG](CHANGELOG.md).
 
+> 🔗 **PearlHash / P-pool MDL binding helper**: for pools that require PRL-to-MDL wallet binding, download the [MDL wallet binding signature helper](https://github.com/heishiqing/pearl-mdl-bind-helper/releases/latest/download/P.MDL.zip), unzip it, and run the Chinese one-click script.
+
 ## ✨ Features
 
 - **One-click mining**: enter a wallet, pick a pool, hit start — the matching kernel is downloaded and launched automatically.
