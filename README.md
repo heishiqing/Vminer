@@ -30,13 +30,13 @@ Vminer 是一个 PRL 挖矿 Windows 桌面管理器，解压后双击即可使�
 
 <div align="center">
 
-### [⬇️ 下载最新版 v0.2.3](https://github.com/heishiqing/Vminer/releases/latest)
+### [⬇️ 下载最新版 v0.2.4](https://github.com/heishiqing/Vminer/releases/latest)
 
 </div>
 
 下载压缩包后解压，双击根目录 `Vminer.exe` 启动。压缩包内包含 `使用说明.md` 和 `User Guide.md`。
 
-> 🆕 **v0.2.3 更新**：新增 MDL 合并挖矿支持 · 优化 HeroMiners / LuckyPool / AlphaPool / PearlHash 等矿池兼容性 · 优化断线重连、运行日志和后台清理体验 · 提升新版显卡与多矿工内核启动稳定性。完整记录见 [CHANGELOG](CHANGELOG.md)。
+> 🆕 **v0.2.4 更新**：修复 AlphaPool 双挖启动与稳定性问题 · 新增内核版本动态拉取，后续服务器上架新内核后客户端可自动显示 · 上架 WildRig 0.49.1 与 TW 2.3.1 可选内核 · 修复性能总开关关闭时仍可能覆盖外部风扇设置的问题 · 优化异常退出后的自动恢复保护。完整记录见 [CHANGELOG](CHANGELOG.md)。
 
 ## ✨ 功能
 

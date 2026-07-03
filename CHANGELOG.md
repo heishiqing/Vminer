@@ -2,6 +2,22 @@
 
 [中文](README.md) | [English](README.en.md)
 
+## v0.2.4
+
+- 修复 AlphaPool 双挖启动与稳定性问题，重点覆盖 A 池无法双挖/启动失败场景。
+- 新增客户端内核版本动态拉取：服务器上架新内核后，客户端可刷新并显示新版本号。
+- 上架 WildRig 0.49.1 与 TW 2.3.1 可选内核；SRBMiner / AlphaMiner 维持当前稳定版本。
+- 修复性能总开关关闭时仍可能覆盖外部风扇设置的问题；关闭性能调度后不再接管外部超频/风扇配置。
+- 优化异常退出后的自动恢复保护，减少循环闪退后反复恢复挖矿的风险。
+
+English:
+
+- Fixed AlphaPool dual-mining startup and stability issues, especially the A-pool dual-mining launch path.
+- Added dynamic kernel-version refresh: newly published server-side kernels can appear in the client without hardcoding every future version.
+- Added WildRig 0.49.1 and TW 2.3.1 as selectable kernels while keeping SRBMiner / AlphaMiner on the current stable versions.
+- Fixed fan settings being overwritten when the performance master switch is off; external overclock/fan settings are no longer touched in that mode.
+- Improved recovery protection after abnormal exits to reduce repeated crash/restart loops.
+
 ## v0.2.3
 
 - 新增 MDL 合并挖矿支持：在支持合并挖矿的矿池中，可同时填写 PRL 与 MDL 钱包进行挖矿。
