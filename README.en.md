@@ -41,6 +41,7 @@ Download the zip, unzip it, and double-click `Vminer.exe` in the root folder. Th
 ## ✨ Features
 
 - **One-click mining**: enter a wallet, pick a pool, hit start — the matching kernel is downloaded and launched automatically.
+- **MDL dual mining**: supports PRL + MDL merge mining on compatible pools, with separate PRL and MDL wallet addresses.
 - **Multiple pools**: 7 pools built in, switch inside the app.
 - **Status display**: online state, GPU count, hashrate, accepted shares, rejected shares, and mining state at a glance.
 - **Runtime logs**: miner output, pool connection state, and program messages.
