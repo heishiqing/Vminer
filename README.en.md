@@ -36,7 +36,7 @@ It is designed for NVIDIA users who want quick pool setup, kernel switching, has
 
 Download the zip, unzip it, and double-click `Vminer.exe` in the root folder. The package includes `使用说明.md` and `User Guide.md`.
 
-> 🆕 **What's new in v0.2.5**: fixed startup/UI issues seen in some environments · improved config saving and loading for diskless and bulk deployments · empty worker names now use the local computer name automatically · optimized GPU status polling to reduce extra runtime queries · PRL mining and MDL dual mining remain supported. Full log in [CHANGELOG](CHANGELOG.md).
+> 🆕 **What's new in v0.2.5**: fixed startup/UI issues seen in some environments · improved config saving and loading for cyber-cafe diskless systems and bulk deployments · empty worker names now use the local computer name automatically · optimized GPU status polling to reduce extra runtime queries · PRL mining and MDL dual mining remain supported. Full log in [CHANGELOG](CHANGELOG.md).
 
 > 🔗 **PearlHash / P-pool MDL binding helper**: for pools that require PRL-to-MDL wallet binding, download the [MDL wallet binding signature helper](https://github.com/heishiqing/pearl-mdl-bind-helper/releases/latest/download/P.MDL.zip), unzip it, and run the Chinese one-click script.
 
@@ -51,6 +51,7 @@ Download the zip, unzip it, and double-click `Vminer.exe` in the root folder. Th
 - **Related Sites**: one-click access to the official site, wallet, block explorer, and pool websites.
 - **Live price in-app**: view the real-time PRL price inside the app (no VPN needed in mainland China).
 - **Auto run**: start with Windows, auto mine after launch, and background silent mode.
+- **Cyber-cafe diskless systems**: copy a fully configured client folder to the master image; new PCs can read pool, kernel, dual-mining, wallet and worker-name rules, while empty worker names automatically use each PC's computer name.
 - **Power & fan**: NVIDIA power-limit percentage plus fan-speed control (re-checked every 5 minutes and re-applied if it drifts).
 - **Startup self-check**: connectivity, GPU driver, or antivirus issues raise a clear prompt and stop — no blind retry loop.
 - **Worker name**: add a prefix or generate randomly to tell machines apart.
