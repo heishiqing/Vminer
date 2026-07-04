@@ -44,7 +44,7 @@ Download the zip, unzip it, and double-click `Vminer.exe` in the root folder. Th
 
 - **One-click mining**: enter a wallet, pick a pool, hit start — the matching kernel is downloaded and launched automatically.
 - **MDL dual mining**: supports PRL + MDL merge mining on compatible pools, with separate PRL and MDL wallet addresses.
-- **Multiple pools**: 7 pools built in, switch inside the app.
+- **Multiple pools**: 8 pools built in, switch inside the app.
 - **Status display**: online state, GPU count, hashrate, accepted shares, rejected shares, and mining state at a glance.
 - **Runtime logs**: miner output, pool connection state, and program messages.
 - **Pool balance lookup**: view pool-side balance, paid, shares, and online rigs inside the app (no VPN needed in mainland China).
@@ -61,13 +61,26 @@ Download the zip, unzip it, and double-click `Vminer.exe` in the root folder. Th
 
 **NVIDIA-only**, focused on N-card efficiency and stability. Vminer filters available kernels and pools by detected GPU.
 
-## 🔌 Supported pools, kernels, and coin
+## 🔌 Supported pools, mining software, and coin
 
 **Coin:** PRL
 
-**Pools (7):** AlphaPool, HeroMiners, Kryptex, LuckyPool, 2Miners, PearlFortune, PearlHash
+**Pools (8):** AlphaPool, LuckyPool, F2Pool, HeroMiners, Kryptex, 2Miners, PearlFortune, PearlHash
 
-**Mining kernels:** SRBMiner, AlphaMiner, WildRig, TW (pearl-gpu) — all latest versions, auto-matched to the selected pool; downloaded on demand at first launch to keep the package slim.
+**Mining software:** SRBMiner, AlphaMiner, WildRig, TW (pearl-gpu) — auto-matched to the selected pool; downloaded on demand at first launch to keep the package slim.
+
+| Pool | Supported software | MDL dual mining / notes |
+|---|---|---|
+| AlphaPool | AlphaMiner | MDL dual mining supported |
+| LuckyPool | SRBMiner, TW (pearl-gpu) | MDL dual mining supported with SRBMiner |
+| F2Pool | TW (pearl-gpu) | Uses F2Pool username / sub-account; in-app pool stats are not supported yet |
+| HeroMiners | SRBMiner, TW (pearl-gpu) | MDL dual mining supported with SRBMiner |
+| Kryptex | SRBMiner, TW (pearl-gpu) | PRL single mining |
+| 2Miners | SRBMiner, TW (pearl-gpu) | PRL single mining |
+| PearlFortune | TW (pearl-gpu) | P-pool binding mode, use the MDL binding helper above |
+| PearlHash | WildRig | PRL single mining |
+
+**Kernel versions:** SRBMiner 3.3.9 / 3.4.1 / 3.4.2 / 3.4.3; AlphaMiner 1.7.7 / 1.8.3 / 1.8.6; WildRig 0.48.9 / 0.49.1; TW 2.2.1 / 2.2.6 / 2.3.1 / 2.3.2. The selectable versions follow the server-side manifest and may update over time.
 
 ## 🚀 Quick start
 

@@ -44,7 +44,7 @@ Vminer 是一个 PRL 挖矿 Windows 桌面管理器，解压后双击即可使�
 
 - **一键挖矿**：填钱包、选矿池、点开始，自动下载并启动对应挖矿内核。
 - **MDL 双挖**：支持 PRL + MDL 合并挖矿，在支持双挖的矿池中可同时填写 PRL 与 MDL 钱包。
-- **多矿池**：内置 7 家矿池，软件内一键切换。
+- **多矿池**：内置 8 家矿池，软件内一键切换。
 - **状态显示**：在线状态、显卡数量、算力、接受份额、拒绝份额和运行状态一目了然。
 - **日志查看**：运行日志、矿池连接和挖矿内核输出。
 - **矿池余额查询**：软件内直接查矿池侧余额、已支付、份额、在线矿机数（中国大陆无需梯子）。
@@ -61,13 +61,26 @@ Vminer 是一个 PRL 挖矿 Windows 桌面管理器，解压后双击即可使�
 
 **NVIDIA 专版**，聚焦 N 卡能效与稳定性优化。软件会按显卡自动筛选可用内核和矿池。
 
-## 🔌 支持矿池、内核、币种
+## 🔌 支持矿池、软件、币种
 
 **币种：** PRL
 
-**矿池（7 家）：** AlphaPool、HeroMiners、Kryptex、LuckyPool、2Miners、PearlFortune、PearlHash
+**矿池（8 家）：** AlphaPool、LuckyPool、F2Pool、HeroMiners、Kryptex、2Miners、PearlFortune、PearlHash
 
-**挖矿内核：** SRBMiner、AlphaMiner、WildRig、TW（pearl-gpu）—— 均为最新版，按所选矿池自动匹配；内核首次启动按需下载，安装包更精简。
+**挖矿软件：** SRBMiner、AlphaMiner、WildRig、TW（pearl-gpu）—— 按所选矿池自动匹配；内核首次启动按需下载，安装包更精简。
+
+| 矿池 | 支持挖矿软件 | MDL 双挖 / 说明 |
+|---|---|---|
+| AlphaPool | AlphaMiner | 支持 MDL 双挖 |
+| LuckyPool | SRBMiner、TW（pearl-gpu） | 支持 MDL 双挖（SRBMiner） |
+| F2Pool（鱼池） | TW（pearl-gpu） | 使用 F2Pool 用户名 / 子账户挖矿；池内统计暂不支持 |
+| HeroMiners | SRBMiner、TW（pearl-gpu） | 支持 MDL 双挖（SRBMiner） |
+| Kryptex | SRBMiner、TW（pearl-gpu） | PRL 单挖 |
+| 2Miners | SRBMiner、TW（pearl-gpu） | PRL 单挖 |
+| PearlFortune | TW（pearl-gpu） | P 池绑定模式，使用上方 MDL 绑定工具 |
+| PearlHash | WildRig | PRL 单挖 |
+
+**内核版本：** SRBMiner 3.3.9 / 3.4.1 / 3.4.2 / 3.4.3；AlphaMiner 1.7.7 / 1.8.3 / 1.8.6；WildRig 0.48.9 / 0.49.1；TW 2.2.1 / 2.2.6 / 2.3.1 / 2.3.2。实际可选版本会随服务器清单更新。
 
 ## 🚀 快速上手
 
