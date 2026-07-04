@@ -30,13 +30,13 @@ It is designed for NVIDIA users who want quick pool setup, kernel switching, has
 
 <div align="center">
 
-### [⬇️ Download latest v0.2.4](https://github.com/heishiqing/Vminer/releases/latest)
+### [⬇️ Download latest v0.2.5](https://github.com/heishiqing/Vminer/releases/latest)
 
 </div>
 
 Download the zip, unzip it, and double-click `Vminer.exe` in the root folder. The package includes `使用说明.md` and `User Guide.md`.
 
-> 🆕 **What's new in v0.2.4**: fixed AlphaPool dual-mining startup and stability issues · added dynamic kernel-version refresh so newly published kernels can appear in the client · added WildRig 0.49.1 and TW 2.3.1 as selectable kernels · fixed fan settings being overwritten when the performance master switch is off · improved crash-recovery protection after repeated abnormal exits. Full log in [CHANGELOG](CHANGELOG.md).
+> 🆕 **What's new in v0.2.5**: fixed startup/UI issues seen in some environments · improved config saving and loading for diskless and bulk deployments · empty worker names now use the local computer name automatically · optimized GPU status polling to reduce extra runtime queries · PRL mining and MDL dual mining remain supported. Full log in [CHANGELOG](CHANGELOG.md).
 
 > 🔗 **PearlHash / P-pool MDL binding helper**: for pools that require PRL-to-MDL wallet binding, download the [MDL wallet binding signature helper](https://github.com/heishiqing/pearl-mdl-bind-helper/releases/latest/download/P.MDL.zip), unzip it, and run the Chinese one-click script.
 

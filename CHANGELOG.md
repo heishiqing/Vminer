@@ -2,6 +2,22 @@
 
 [中文](README.md) | [English](README.en.md)
 
+## v0.2.5
+
+- 修复部分环境启动/界面异常问题，提升客户端稳定性。
+- 优化无盘和批量部署场景下的配置保存与读取，矿池、内核、双挖等配置可完整保留。
+- 矿工名留空时自动使用本机电脑名，方便同一配置复制到多台机器。
+- 优化显卡状态读取，减少运行中的额外查询开销。
+- 继续支持 PRL 挖矿与 MDL 双挖。
+
+English:
+
+- Fixed startup/UI issues seen in some environments and improved client stability.
+- Improved config saving and loading for diskless and bulk deployments, preserving pool, kernel, dual-mining and related settings.
+- Empty worker names now use the local computer name automatically, making shared configs easier to deploy across many machines.
+- Optimized GPU status polling to reduce extra runtime queries.
+- PRL mining and MDL dual mining remain supported.
+
 ## v0.2.4
 
 - 修复 AlphaPool 双挖启动与稳定性问题，重点覆盖 A 池无法双挖/启动失败场景。

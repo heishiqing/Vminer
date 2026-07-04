@@ -30,13 +30,13 @@ Vminer 是一个 PRL 挖矿 Windows 桌面管理器，解压后双击即可使�
 
 <div align="center">
 
-### [⬇️ 下载最新版 v0.2.4](https://github.com/heishiqing/Vminer/releases/latest)
+### [⬇️ 下载最新版 v0.2.5](https://github.com/heishiqing/Vminer/releases/latest)
 
 </div>
 
 下载压缩包后解压，双击根目录 `Vminer.exe` 启动。压缩包内包含 `使用说明.md` 和 `User Guide.md`。
 
-> 🆕 **v0.2.4 更新**：修复 AlphaPool 双挖启动与稳定性问题 · 新增内核版本动态拉取，后续服务器上架新内核后客户端可自动显示 · 上架 WildRig 0.49.1 与 TW 2.3.1 可选内核 · 修复性能总开关关闭时仍可能覆盖外部风扇设置的问题 · 优化异常退出后的自动恢复保护。完整记录见 [CHANGELOG](CHANGELOG.md)。
+> 🆕 **v0.2.5 更新**：修复部分环境启动/界面异常问题 · 优化无盘和批量部署场景下的配置保存与读取 · 矿工名留空时自动使用本机电脑名 · 优化显卡状态读取，减少运行中的额外查询开销 · 继续支持 PRL 挖矿与 MDL 双挖。完整记录见 [CHANGELOG](CHANGELOG.md)。
 
 > 🔗 **P 池 MDL 钱包绑定工具**：如果使用 PearlHash / P 池的 MDL 绑定模式，可下载 [MDL 钱包绑定签名助手](https://github.com/heishiqing/pearl-mdl-bind-helper/releases/latest/download/P.MDL.zip)，解压后按中文提示双击运行脚本。
 
