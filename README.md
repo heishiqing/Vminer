@@ -36,7 +36,7 @@ Vminer 是一个 PRL 挖矿 Windows 桌面管理器，解压后双击即可使�
 
 下载压缩包后解压，双击根目录 `Vminer.exe` 启动。压缩包内包含 `使用说明.md` 和 `User Guide.md`。
 
-> 🆕 **v0.2.6 更新**：修复服务器线路异常后连接恢复和备用线路切换不及时的问题 · 修复远程热更新证书校验兼容问题 · 更新流程增加中英文运行日志提示 · 优化矿池余额和币价查询的备用线路等待时间。完整记录见 [CHANGELOG](CHANGELOG.md)。
+> 🆕 **v0.2.6 更新**：修复服务器线路异常后连接恢复和备用线路切换不及时的问题 · 修复远程热更新证书校验兼容问题 · 修复内核版本列表刷新，服务器上架新内核后客户端可显示新版本 · 优化矿池余额和币价查询的备用线路等待时间。完整记录见 [CHANGELOG](CHANGELOG.md)。
 
 > 🔗 **P 池 MDL 钱包绑定工具**：如果使用 PearlHash / P 池的 MDL 绑定模式，可下载 [MDL 钱包绑定签名助手](https://github.com/heishiqing/pearl-mdl-bind-helper/releases/latest/download/P.MDL.zip)，解压后按中文提示双击运行脚本。
 
@@ -80,7 +80,7 @@ Vminer 是一个 PRL 挖矿 Windows 桌面管理器，解压后双击即可使�
 | PearlFortune | TW（pearl-gpu） | P 池绑定模式，使用上方 MDL 绑定工具 |
 | PearlHash | WildRig | PRL 单挖 |
 
-**内核版本：** SRBMiner 3.3.9 / 3.4.1 / 3.4.2 / 3.4.3；AlphaMiner 1.7.7 / 1.8.3 / 1.8.6；WildRig 0.48.9 / 0.49.1；TW 2.2.1 / 2.2.6 / 2.3.1 / 2.3.2。实际可选版本会随服务器清单更新。
+**内核版本：** SRBMiner 3.3.9 / 3.4.1 / 3.4.2 / 3.4.3；AlphaMiner 1.7.7 / 1.8.3 / 1.8.6；WildRig 0.48.9 / 0.49.1 / 0.49.2；TW 2.2.1 / 2.2.6 / 2.3.1 / 2.3.2。实际可选版本会随服务器清单更新。
 
 ## 🚀 快速上手
 

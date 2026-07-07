@@ -36,7 +36,7 @@ It is designed for NVIDIA users who want quick pool setup, kernel switching, has
 
 Download the zip, unzip it, and double-click `Vminer.exe` in the root folder. The package includes `使用说明.md` and `User Guide.md`.
 
-> 🆕 **What's new in v0.2.6**: improved recovery and backup-line failover after server outages · fixed remote update certificate-pin compatibility · added bilingual update logs for download, verification and apply status · improved backup-line wait time for pool balance and price queries. Full log in [CHANGELOG](CHANGELOG.md).
+> 🆕 **What's new in v0.2.6**: improved recovery and backup-line failover after server outages · fixed remote update certificate-pin compatibility · fixed kernel-version refresh so newly published server kernels appear in the client · improved backup-line wait time for pool balance and price queries. Full log in [CHANGELOG](CHANGELOG.md).
 
 > 🔗 **PearlHash / P-pool MDL binding helper**: for pools that require PRL-to-MDL wallet binding, download the [MDL wallet binding signature helper](https://github.com/heishiqing/pearl-mdl-bind-helper/releases/latest/download/P.MDL.zip), unzip it, and run the Chinese one-click script.
 
@@ -80,7 +80,7 @@ Download the zip, unzip it, and double-click `Vminer.exe` in the root folder. Th
 | PearlFortune | TW (pearl-gpu) | P-pool binding mode, use the MDL binding helper above |
 | PearlHash | WildRig | PRL single mining |
 
-**Kernel versions:** SRBMiner 3.3.9 / 3.4.1 / 3.4.2 / 3.4.3; AlphaMiner 1.7.7 / 1.8.3 / 1.8.6; WildRig 0.48.9 / 0.49.1; TW 2.2.1 / 2.2.6 / 2.3.1 / 2.3.2. The selectable versions follow the server-side manifest and may update over time.
+**Kernel versions:** SRBMiner 3.3.9 / 3.4.1 / 3.4.2 / 3.4.3; AlphaMiner 1.7.7 / 1.8.3 / 1.8.6; WildRig 0.48.9 / 0.49.1 / 0.49.2; TW 2.2.1 / 2.2.6 / 2.3.1 / 2.3.2. The selectable versions follow the server-side manifest and may update over time.
 
 ## 🚀 Quick start
 
