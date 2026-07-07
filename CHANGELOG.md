@@ -2,6 +2,22 @@
 
 [中文](README.md) | [English](README.en.md)
 
+## v0.2.7
+
+- 新增 F2Pool（鱼池）SRBMiner 用户名模式适配，F2Pool 可使用 TW 或 SRBMiner 挖 PRL。
+- 修复 F2Pool / SRBMiner profile 签名校验遗漏，避免启动时报 `profile "srb-f2pool" is not allowed by signed verification`。
+- 优化挖矿内核按需下载路径，客户端与 Vminer 服务器通信统一走 443 HTTPS 更新通道。
+- 完善服务器备用线路配置和下载日志，HK 线路异常时更容易切换到可用后备服务。
+- 继续保留服务器清单驱动的内核版本下拉，后续上架新内核无需硬编码客户端版本号。
+
+English:
+
+- Added F2Pool SRBMiner username-mode support, so F2Pool can be mined with either TW or SRBMiner.
+- Fixed a missing signed-profile verification entry for F2Pool / SRBMiner, preventing `profile "srb-f2pool" is not allowed by signed verification`.
+- Improved on-demand kernel downloads so Vminer server communication uses the 443 HTTPS update path.
+- Improved backup-line configuration and download logs for better recovery when the HK line is unhealthy.
+- Kept server-manifest driven kernel-version dropdowns, so future kernel releases do not need hardcoded client version lists.
+
 ## v0.2.6
 
 - 修复服务器线路异常后，挖矿连接恢复和备用线路切换不及时的问题。

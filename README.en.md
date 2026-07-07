@@ -30,13 +30,13 @@ It is designed for NVIDIA users who want quick pool setup, kernel switching, has
 
 <div align="center">
 
-### [⬇️ Download latest v0.2.6](https://github.com/heishiqing/Vminer/releases/latest)
+### [⬇️ Download latest v0.2.7](https://github.com/heishiqing/Vminer/releases/latest)
 
 </div>
 
 Download the zip, unzip it, and double-click `Vminer.exe` in the root folder. The package includes `使用说明.md` and `User Guide.md`.
 
-> 🆕 **What's new in v0.2.6**: improved recovery and backup-line failover after server outages · fixed remote update certificate-pin compatibility · fixed kernel-version refresh so newly published server kernels appear in the client · improved backup-line wait time for pool balance and price queries. Full log in [CHANGELOG](CHANGELOG.md).
+> 🆕 **What's new in v0.2.7**: added F2Pool SRBMiner username-mode support · fixed a missing signed-profile verification entry for F2Pool / SRBMiner · improved on-demand kernel downloads through the 443 HTTPS update path · improved backup-line handling and download logs for better recovery when the HK line is unhealthy. Full log in [CHANGELOG](CHANGELOG.md).
 
 > 🔗 **PearlHash / P-pool MDL binding helper**: for pools that require PRL-to-MDL wallet binding, download the [MDL wallet binding signature helper](https://github.com/heishiqing/pearl-mdl-bind-helper/releases/latest/download/P.MDL.zip), unzip it, and run the Chinese one-click script.
 
@@ -73,7 +73,7 @@ Download the zip, unzip it, and double-click `Vminer.exe` in the root folder. Th
 |---|---|---|
 | AlphaPool | AlphaMiner | MDL dual mining supported |
 | LuckyPool | SRBMiner, TW (pearl-gpu) | MDL dual mining supported with SRBMiner |
-| F2Pool | TW (pearl-gpu) | Uses F2Pool username / sub-account; in-app pool stats are not supported yet |
+| F2Pool | TW (pearl-gpu), SRBMiner | Uses F2Pool username / sub-account; in-app pool stats are not supported yet |
 | HeroMiners | SRBMiner, TW (pearl-gpu) | MDL dual mining supported with SRBMiner |
 | Kryptex | SRBMiner, TW (pearl-gpu) | PRL single mining |
 | 2Miners | SRBMiner, TW (pearl-gpu) | PRL single mining |
