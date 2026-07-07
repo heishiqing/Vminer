@@ -2,6 +2,20 @@
 
 [中文](README.md) | [English](README.en.md)
 
+## v0.2.6
+
+- 修复服务器线路异常后，挖矿连接恢复和备用线路切换不及时的问题。
+- 修复远程热更新证书校验兼容问题，后续版本可正常接收服务器热更新。
+- 更新流程增加中英文运行日志提示，包含发现新版本、下载、校验、应用和重启状态。
+- 优化矿池余额和币价查询的备用线路等待时间，减少服务器故障时显示为空的情况。
+
+English:
+
+- Improved mining connection recovery and backup-line failover after server outages.
+- Fixed remote-update certificate pin compatibility so future versions can receive server-pushed updates normally.
+- Added bilingual update logs for new-version detection, download, verification, apply and restart status.
+- Improved backup-line wait time for pool balance and price queries, reducing empty displays during server outages.
+
 ## v0.2.5
 
 - 修复部分环境启动/界面异常问题，提升客户端稳定性。
