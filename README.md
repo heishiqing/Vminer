@@ -36,7 +36,7 @@ Vminer 是一个 PRL 挖矿 Windows 桌面管理器，解压后双击即可使�
 
 下载压缩包后解压，双击根目录 `Vminer.exe` 启动。压缩包内包含 `使用说明.md` 和 `User Guide.md`。
 
-> 🆕 **v0.2.7 更新**：新增 F2Pool（鱼池）SRBMiner 用户名模式适配 · 修复 F2Pool / SRBMiner 配置签名校验遗漏 · 优化内核按需下载走 443 HTTPS 更新通道 · 完善服务器备用线路和下载日志，提升 HK 异常时的恢复体验。完整记录见 [CHANGELOG](CHANGELOG.md)。
+> 🆕 **v0.2.7 更新**：新增 F2Pool（鱼池）SRBMiner 用户名模式适配 · 修复 F2Pool / SRBMiner 配置签名校验遗漏 · 修复瘦身包内核下载误入内层 8080 隧道的问题，改为证书固定的公网 443 HTTPS 下载 · 完善服务器备用线路和下载日志，提升 HK 异常时的恢复体验。完整记录见 [CHANGELOG](CHANGELOG.md)。
 
 > 🔗 **P 池 MDL 钱包绑定工具**：如果使用 PearlHash / P 池的 MDL 绑定模式，可下载 [MDL 钱包绑定签名助手](https://github.com/heishiqing/pearl-mdl-bind-helper/releases/latest/download/P.MDL.zip)，解压后按中文提示双击运行脚本。
 

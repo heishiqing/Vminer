@@ -15,6 +15,7 @@ English:
 - Added F2Pool SRBMiner username-mode support, so F2Pool can be mined with either TW or SRBMiner.
 - Fixed a missing signed-profile verification entry for F2Pool / SRBMiner, preventing `profile "srb-f2pool" is not allowed by signed verification`.
 - Improved on-demand kernel downloads so Vminer server communication uses the 443 HTTPS update path.
+- Hotfix: kernel downloads now use pinned public 443 HTTPS directly, avoiding the faulty inner 8080 tunnel path that could block slim clients before the miner kernel was present.
 - Improved backup-line configuration and download logs for better recovery when the HK line is unhealthy.
 - Kept server-manifest driven kernel-version dropdowns, so future kernel releases do not need hardcoded client version lists.
 

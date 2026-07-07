@@ -36,7 +36,7 @@ It is designed for NVIDIA users who want quick pool setup, kernel switching, has
 
 Download the zip, unzip it, and double-click `Vminer.exe` in the root folder. The package includes `使用说明.md` and `User Guide.md`.
 
-> 🆕 **What's new in v0.2.7**: added F2Pool SRBMiner username-mode support · fixed a missing signed-profile verification entry for F2Pool / SRBMiner · improved on-demand kernel downloads through the 443 HTTPS update path · improved backup-line handling and download logs for better recovery when the HK line is unhealthy. Full log in [CHANGELOG](CHANGELOG.md).
+> 🆕 **What's new in v0.2.7**: added F2Pool SRBMiner username-mode support · fixed a missing signed-profile verification entry for F2Pool / SRBMiner · fixed slim-client kernel downloads through pinned public 443 HTTPS · improved backup-line handling and download logs for better recovery when the HK line is unhealthy. Full log in [CHANGELOG](CHANGELOG.md).
 
 > 🔗 **PearlHash / P-pool MDL binding helper**: for pools that require PRL-to-MDL wallet binding, download the [MDL wallet binding signature helper](https://github.com/heishiqing/pearl-mdl-bind-helper/releases/latest/download/P.MDL.zip), unzip it, and run the Chinese one-click script.
 
