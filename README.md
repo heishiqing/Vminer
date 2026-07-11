@@ -126,3 +126,4 @@ Windows 压缩包内包含 `使用说明.md` 和 `User Guide.md`。
 ## 🔗 作者其他项目
 
 - [Vbot-B](https://github.com/heishiqing/Vbot-B)：B 站私信自动回复机器人。
+- [pearl-proxy](https://github.com/heishiqing/pearl-proxy)：PRL 加密转发软件。

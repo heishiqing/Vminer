@@ -126,3 +126,4 @@ If you like Vminer, consider supporting the author on Afdian.
 ## 🔗 Other projects
 
 - [Vbot-B](https://github.com/heishiqing/Vbot-B): Bilibili private message auto-reply bot.
+- [pearl-proxy](https://github.com/heishiqing/pearl-proxy): encrypted PRL proxy/relay software.
