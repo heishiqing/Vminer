@@ -4,7 +4,7 @@
 
 # Vminer
 
-### PRL 挖矿 Windows 一站式管理工具，解压即用
+### Windows PRL 与 macOS BTX 挖矿管理工具，解压即用
 
 [![Release](https://img.shields.io/github/v/release/heishiqing/Vminer?color=0E7490&label=latest)](https://github.com/heishiqing/Vminer/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/heishiqing/Vminer/total?color=F59E0B)](https://github.com/heishiqing/Vminer/releases)
@@ -18,7 +18,10 @@
 
 ## 📖 Vminer 是什么
 
-Vminer 是一个 PRL 挖矿 Windows 桌面管理器，解压后双击即可使用。专注 **NVIDIA 显卡**挖矿，内置多家矿池和挖矿内核，一键配置、连通性检查、状态监控和矿池余额查询。
+Vminer 是一个桌面挖矿管理工具，解压后双击即可使用。
+
+- **Windows 版**：面向 PRL 挖矿，专注 **NVIDIA 显卡**，内置多家矿池和挖矿内核，一键配置、连通性检查、状态监控和矿池余额查询。
+- **macOS 版**：面向 BTX 挖矿，支持 Apple Silicon（M 系列）设备，默认使用加密代理模式连接矿池，启动后可直接填写钱包和矿工名开始挖矿。
 
 适合需要快速配置矿池、切换挖矿内核、查看算力和份额、查询矿池余额的 N 卡用户。
 
@@ -28,13 +31,14 @@ Vminer 是一个 PRL 挖矿 Windows 桌面管理器，解压后双击即可使�
 
 ## 📥 下载
 
-<div align="center">
+| 系统 | 当前版本 | 下载 | 启动方式 |
+|---|---:|---|---|
+| Windows | v0.2.x | [下载 Windows 最新版](https://github.com/heishiqing/Vminer/releases/latest) | 下载压缩包后解压，双击根目录 `Vminer.exe` 启动 |
+| macOS Apple Silicon | v0.0.1 | [下载 Vminer-mac-v0.0.1.zip](https://github.com/heishiqing/Vminer/releases/download/mac-v0.0.1/Vminer-mac-v0.0.1.zip) | 解压后双击 `Vminer.app` 启动 |
 
-### [⬇️ 下载最新版 v0.2.7](https://github.com/heishiqing/Vminer/releases/latest)
+macOS 版发布页：[mac-v0.0.1](https://github.com/heishiqing/Vminer/releases/tag/mac-v0.0.1)。如果 macOS 首次运行出现安全提示，请在 Finder 中右键 `Vminer.app` 选择“打开”一次。
 
-</div>
-
-下载压缩包后解压，双击根目录 `Vminer.exe` 启动。压缩包内包含 `使用说明.md` 和 `User Guide.md`。
+Windows 压缩包内包含 `使用说明.md` 和 `User Guide.md`。
 
 > 🆕 **v0.2.7 更新**：新增 F2Pool（鱼池）SRBMiner 用户名模式适配 · 修复 F2Pool / SRBMiner 配置签名校验遗漏 · 修复瘦身包内核下载误入内层 8080 隧道的问题，改为证书固定的公网 443 HTTPS 下载 · 完善服务器备用线路和下载日志，提升 HK 异常时的恢复体验。完整记录见 [CHANGELOG](CHANGELOG.md)。
 
@@ -57,11 +61,20 @@ Vminer 是一个 PRL 挖矿 Windows 桌面管理器，解压后双击即可使�
 - **矿机名**：可加前缀或随机生成，方便区分多台机器。
 - **全新界面**：暗色玻璃风格，左侧导航，操作更顺手。
 
+## 🍎 macOS BTX 版
+
+- 支持 Apple Silicon（M 系列）macOS 设备。
+- 默认使用加密代理模式连接矿池。
+- 默认不填写用户钱包，用户首次运行后自行填写。
+- 支持中英文界面、开机启动、启动后自动挖矿、悬浮窗、矿池算力/份额同步和 BTX/USDT 价格显示。
+- 当前内核：`dexbtx-miner 0.4.20`。
+- 当前矿池：`minebtx`。矿池统计以矿池接口返回为准。
+
 ## 🖥️ 显卡兼容
 
 **NVIDIA 专版**，聚焦 N 卡能效与稳定性优化。软件会按显卡自动筛选可用内核和矿池。
 
-## 🔌 支持矿池、软件、币种
+## 🔌 Windows 支持矿池、软件、币种
 
 **币种：** PRL
 

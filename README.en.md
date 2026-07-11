@@ -4,7 +4,7 @@
 
 # Vminer
 
-### One-stop Windows manager for PRL mining. Unzip and run.
+### Mining manager for Windows PRL and macOS BTX. Unzip and run.
 
 [![Release](https://img.shields.io/github/v/release/heishiqing/Vminer?color=0E7490&label=latest)](https://github.com/heishiqing/Vminer/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/heishiqing/Vminer/total?color=F59E0B)](https://github.com/heishiqing/Vminer/releases)
@@ -18,7 +18,10 @@
 
 ## 📖 What is Vminer
 
-Vminer is a Windows desktop manager for PRL mining. Unzip the package and double-click to run. It focuses on **NVIDIA GPU** mining, with multiple pools and mining kernels built in — one-click setup, connectivity checks, status monitoring, and pool balance lookup.
+Vminer is a desktop mining manager. Unzip the package and double-click to run.
+
+- **Windows edition**: built for PRL mining on **NVIDIA GPUs**, with multiple pools and mining kernels built in: one-click setup, connectivity checks, status monitoring, and pool balance lookup.
+- **macOS edition**: built for BTX mining on Apple Silicon Macs. It uses encrypted proxy mode by default and lets users fill in their own wallet and worker name before mining.
 
 It is designed for NVIDIA users who want quick pool setup, kernel switching, hashrate and share display, and pool balance lookups.
 
@@ -28,13 +31,14 @@ It is designed for NVIDIA users who want quick pool setup, kernel switching, has
 
 ## 📥 Download
 
-<div align="center">
+| Platform | Current version | Download | How to start |
+|---|---:|---|---|
+| Windows | v0.2.x | [Download latest Windows release](https://github.com/heishiqing/Vminer/releases/latest) | Unzip the package and double-click `Vminer.exe` |
+| macOS Apple Silicon | v0.0.1 | [Download Vminer-mac-v0.0.1.zip](https://github.com/heishiqing/Vminer/releases/download/mac-v0.0.1/Vminer-mac-v0.0.1.zip) | Unzip the package and double-click `Vminer.app` |
 
-### [⬇️ Download latest v0.2.7](https://github.com/heishiqing/Vminer/releases/latest)
+macOS release page: [mac-v0.0.1](https://github.com/heishiqing/Vminer/releases/tag/mac-v0.0.1). If macOS shows a first-run security prompt, right-click `Vminer.app` in Finder and choose Open once.
 
-</div>
-
-Download the zip, unzip it, and double-click `Vminer.exe` in the root folder. The package includes `使用说明.md` and `User Guide.md`.
+The Windows package includes `使用说明.md` and `User Guide.md`.
 
 > 🆕 **What's new in v0.2.7**: added F2Pool SRBMiner username-mode support · fixed a missing signed-profile verification entry for F2Pool / SRBMiner · fixed slim-client kernel downloads through pinned public 443 HTTPS · improved backup-line handling and download logs for better recovery when the HK line is unhealthy. Full log in [CHANGELOG](CHANGELOG.md).
 
@@ -57,11 +61,20 @@ Download the zip, unzip it, and double-click `Vminer.exe` in the root folder. Th
 - **Worker name**: add a prefix or generate randomly to tell machines apart.
 - **Refreshed UI**: dark-glass style with a left sidebar, smoother to use.
 
+## 🍎 macOS BTX edition
+
+- Supports Apple Silicon macOS devices.
+- Uses encrypted proxy mode by default.
+- Ships with an empty user wallet; users fill in their own wallet on first run.
+- Supports Chinese/English UI, launch at login, auto mine after app launch, floating window, pool-side hashrate/share sync, and BTX/USDT price display.
+- Current miner kernel: `dexbtx-miner 0.4.20`.
+- Current pool: `minebtx`. Pool statistics are shown according to the pool API response.
+
 ## 🖥️ GPU compatibility
 
 **NVIDIA-only**, focused on N-card efficiency and stability. Vminer filters available kernels and pools by detected GPU.
 
-## 🔌 Supported pools, mining software, and coin
+## 🔌 Windows supported pools, mining software, and coin
 
 **Coin:** PRL
 

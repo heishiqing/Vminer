@@ -2,6 +2,24 @@
 
 [中文](README.md) | [English](README.en.md)
 
+## mac-v0.0.1
+
+- 发布 Vminer macOS BTX 初始版本。
+- 支持 Apple Silicon（M 系列）macOS 设备。
+- 默认使用加密代理模式连接 minebtx 矿池。
+- 用户钱包默认留空，首次运行后由用户自行填写。
+- 支持中英文界面、开机启动、启动后自动挖矿、悬浮窗、矿池算力/份额同步和 BTX/USDT 价格显示。
+- 当前内核：`dexbtx-miner 0.4.20`。
+
+English:
+
+- Released the first Vminer macOS BTX build.
+- Supports Apple Silicon macOS devices.
+- Uses encrypted proxy mode by default for the minebtx pool.
+- Ships with an empty user wallet; users fill in their own wallet on first run.
+- Supports Chinese/English UI, launch at login, auto mine after app launch, floating window, pool-side hashrate/share sync, and BTX/USDT price display.
+- Current miner kernel: `dexbtx-miner 0.4.20`.
+
 ## v0.2.7
 
 - 新增 F2Pool（鱼池）SRBMiner 用户名模式适配，F2Pool 可使用 TW 或 SRBMiner 挖 PRL。
