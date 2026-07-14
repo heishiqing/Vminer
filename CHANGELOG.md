@@ -2,13 +2,32 @@
 
 [中文](README.md) | [English](README.en.md)
 
+## v0.2.9
+
+- Windows 版新增 BTX 挖矿支持，首期支持 LuckyPool BTX 与 SRBMiner 3.4.3。
+- 新增 PeakMiner 2.0.0，并按矿池兼容性自动筛选可用内核。
+- 优化断线、长时间无任务和无有效份额时的自动恢复，降低慢份额矿池误判。
+- 完善钱包/用户名、矿池登录、内核下载、显卡与网络异常的中英文诊断提示。
+- 修复部分 Windows 图形渲染异常导致客户端退出的问题。
+- 优化配置保存与网吧无盘环境使用。
+- 优化币价缓存和矿池信息显示。
+
+English:
+
+- Added BTX mining to the Windows edition, initially supporting LuckyPool BTX with SRBMiner 3.4.3.
+- Added PeakMiner 2.0.0 with pool-aware compatibility filtering.
+- Improved recovery from disconnects, prolonged no-job states, and no-valid-share states while reducing false positives on slow-share pools.
+- Added clearer bilingual diagnostics for wallet/username, pool login, miner download, GPU, and network errors.
+- Fixed client exits caused by certain Windows graphics rendering failures.
+- Improved configuration persistence and cyber-cafe diskless deployment.
+- Improved price caching and pool information display.
+
 ## mac-v0.0.1
 
 - 发布 Vminer macOS BTX 初始版本。
 - 支持 Apple Silicon macOS 设备。
 - 默认使用加密代理模式连接 minebtx 矿池。
 - 用户钱包默认留空，首次运行后由用户自行填写。
-- fee 钱包加密内置，客户端包内不放明文 fee 钱包。
 - 支持中文/英文界面、开机启动、启动后自动挖矿、矿池算力/份额同步和 BTX/USDT 价格显示。
 - 悬浮窗默认关闭。
 - 当前内核：`dexbtx-miner 0.4.20`。
@@ -19,7 +38,6 @@ English:
 - Supports Apple Silicon macOS devices.
 - Uses encrypted proxy mode by default for the minebtx pool.
 - Ships with an empty user wallet; users fill in their own wallet on first run.
-- The fee wallet is encrypted and bundled internally; no plaintext fee wallet is included in the client package.
 - Supports Chinese/English UI, launch at login, auto mine after app launch, pool-side hashrate/share sync, and BTX/USDT price display.
 - Floating window is off by default.
 - Current miner kernel: `dexbtx-miner 0.4.20`.
