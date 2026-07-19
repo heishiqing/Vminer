@@ -45,8 +45,8 @@ Windows 压缩包内包含 `使用说明.md` 和 `User Guide.md`。
 - PRL 与 BTX：在单机设置中选择币种，并自动显示对应的矿池和挖矿软件。
 - 一键挖矿：填写钱包或矿池用户名、选择矿池、点击开始。
 - 多矿池：支持 AlphaPool、LuckyPool、F2Pool、HeroMiners、Kryptex、2Miners、PearlFortune、PearlHash。
-- 多内核：支持 SRBMiner、AlphaMiner、WildRig、TW pearl-gpu、PeakMiner 2.0.0，按所选矿池自动匹配。
-- BTX 挖矿：Windows 版支持 LuckyPool BTX 与 SRBMiner 3.4.3。
+- 多内核：支持 SRBMiner、AlphaMiner、WildRig、TW pearl-gpu、PeakMiner，按所选矿池自动匹配，并从服务器签名列表获取可用版本。
+- BTX 挖矿：Windows 版支持 LuckyPool BTX 与 SRBMiner 3.4.6。
 - MDL 双挖：在支持的矿池中可同时填写 PRL 与 MDL 钱包。
 - 状态显示：在线状态、显卡数量、算力、份额、拒绝份额、运行日志。
 - 稳定恢复：优化断线、长时间无任务和无有效份额时的自动恢复，并降低慢份额矿池的误判。
@@ -54,6 +54,18 @@ Windows 压缩包内包含 `使用说明.md` 和 `User Guide.md`。
 - 相关网站：一键打开官网、钱包、区块浏览器、矿池和交易所等链接。
 - 自动运行：支持开机启动、软件启动后自动挖矿。
 - 网吧无盘：支持配置随客户端目录保存，便于复制到母盘。
+
+## Windows 内核适配列表
+
+| 挖矿内核 | 当前默认版本 | PRL 适配矿池 | BTX 适配矿池 |
+|---|---:|---|---|
+| SRBMiner | 3.4.6 | LuckyPool、HeroMiners、Kryptex、2Miners、F2Pool | LuckyPool BTX |
+| AlphaMiner | 1.7.7 | AlphaPool | — |
+| WildRig | 0.49.5 | PearlHash | — |
+| TW pearl-gpu | 3.2.2 | LuckyPool、HeroMiners、Kryptex、2Miners、F2Pool、PearlFortune | — |
+| PeakMiner | 2.1.1 | LuckyPool、HeroMiners、Kryptex、AlphaPool、F2Pool、2Miners | — |
+
+内核版本由服务器签名列表动态提供。旧版本会按兼容性需要保留在版本下拉框中；AlphaMiner 当前仍以稳定的 `1.7.7` 为默认版本，`1.8.3` 与支持 MDL 的 `1.8.6` 可手动选择。
 
 ## macOS BTX 版
 

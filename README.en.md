@@ -45,8 +45,8 @@ The Windows package includes `使用说明.md` and `User Guide.md`.
 - PRL and BTX: select a coin in Single Settings to see its compatible pools and mining software.
 - One-click mining: enter a wallet or pool username, pick a pool, and start.
 - Multiple pools: AlphaPool, LuckyPool, F2Pool, HeroMiners, Kryptex, 2Miners, PearlFortune, and PearlHash.
-- Multiple miner kernels: SRBMiner, AlphaMiner, WildRig, TW pearl-gpu, and PeakMiner 2.0.0, auto-matched to the selected pool.
-- BTX mining: the Windows edition supports LuckyPool BTX with SRBMiner 3.4.3.
+- Multiple miner kernels: SRBMiner, AlphaMiner, WildRig, TW pearl-gpu, and PeakMiner, auto-matched to the selected pool with available versions loaded from a signed server manifest.
+- BTX mining: the Windows edition supports LuckyPool BTX with SRBMiner 3.4.6.
 - MDL dual mining on supported pools.
 - Status display: online state, GPU count, hashrate, accepted shares, rejected shares, and runtime logs.
 - Stable recovery: improved recovery from disconnects, prolonged no-job states, and no-valid-share states while reducing false positives on slow-share pools.
@@ -54,6 +54,18 @@ The Windows package includes `使用说明.md` and `User Guide.md`.
 - Related sites: quick links to the official site, wallet, block explorer, pools, and exchanges.
 - Auto run: launch at login and auto mine after app launch.
 - Cyber-cafe diskless support: configuration can be saved next to the client folder for master-image deployment.
+
+## Windows Miner Compatibility
+
+| Miner | Current default | Supported PRL pools | Supported BTX pools |
+|---|---:|---|---|
+| SRBMiner | 3.4.6 | LuckyPool, HeroMiners, Kryptex, 2Miners, F2Pool | LuckyPool BTX |
+| AlphaMiner | 1.7.7 | AlphaPool | — |
+| WildRig | 0.49.5 | PearlHash | — |
+| TW pearl-gpu | 3.2.2 | LuckyPool, HeroMiners, Kryptex, 2Miners, F2Pool, PearlFortune | — |
+| PeakMiner | 2.1.1 | LuckyPool, HeroMiners, Kryptex, AlphaPool, F2Pool, 2Miners | — |
+
+Miner versions are provided dynamically through a signed server manifest. Older builds remain selectable when needed for compatibility. AlphaMiner keeps stable version `1.7.7` as the default; `1.8.3` and MDL-capable `1.8.6` remain available for manual selection.
 
 ## macOS BTX Edition
 
