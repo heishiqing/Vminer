@@ -31,7 +31,7 @@ Vminer 是桌面挖矿管理工具。用户下载压缩包、解压、双击程�
 
 | 系统 | 当前版本 | 下载 | 启动方式 |
 |---|---:|---|---|
-| Windows | v0.2.9 | [下载 Vminer-v0.2.9.zip](https://github.com/heishiqing/Vminer/releases/download/v0.2.9/Vminer-v0.2.9.zip) | 解压后双击根目录 `Vminer.exe` |
+| Windows | v0.3.0 | [下载 Vminer-v0.3.0.zip](https://github.com/heishiqing/Vminer/releases/download/v0.3.0/Vminer-v0.3.0.zip) | 解压后双击根目录 `Vminer.exe` |
 | macOS Apple Silicon | v0.0.1 | [下载 Vminer-mac-v0.0.1.zip](https://github.com/heishiqing/Vminer/releases/download/mac-v0.0.1/Vminer-mac-v0.0.1.zip) | 解压后双击 `Vminer.app` |
 
 macOS 独立发布页：[mac-v0.0.1](https://github.com/heishiqing/Vminer/releases/tag/mac-v0.0.1)。
@@ -110,3 +110,4 @@ Windows 压缩包内包含 `使用说明.md` 和 `User Guide.md`。
 
 - [Vbot-B](https://github.com/heishiqing/Vbot-B)：B 站私信自动回复机器人。
 - [pearl-proxy](https://github.com/heishiqing/pearl-proxy)：PRL 加密转发软件。
+

@@ -2,6 +2,23 @@
 
 [中文](README.md) | [English](README.en.md)
 
+## v0.3.0
+
+- 优化 F2Pool 用户名模式下的份额处理和连接恢复。
+- 优化长时间无任务、无有效份额和网络波动时的自动恢复策略。
+- 更新 Windows 内核适配列表，支持 PeakMiner 2.1.1、SRBMiner 3.4.6、WildRig 0.49.5、TW pearl-gpu 3.2.2。
+- 优化按需下载与备用下载源，提升矿机内核获取稳定性。
+- 优化矿池、钱包/用户名和网络异常的中英文提示。
+- 优化 Windows 安全相关入口文案与配置保存体验。
+
+English:
+
+- Improved share handling and reconnect behavior for F2Pool username mode.
+- Improved automatic recovery during no-job, no-valid-share, and network fluctuation states.
+- Updated Windows miner compatibility: PeakMiner 2.1.1, SRBMiner 3.4.6, WildRig 0.49.5, and TW pearl-gpu 3.2.2.
+- Improved on-demand miner downloads and backup download sources.
+- Improved bilingual diagnostics for pool, wallet/username, and network errors.
+- Improved Windows security-entry wording and configuration persistence.
 ## v0.2.9
 
 - Windows 版新增 BTX 挖矿支持，首期支持 LuckyPool BTX 与 SRBMiner 3.4.3。
@@ -67,3 +84,4 @@ English:
 - Fixed a missing signed-profile verification entry for F2Pool / SRBMiner.
 - Improved on-demand kernel downloads through pinned public 443 HTTPS.
 - Improved backup-line handling and download logs for better recovery when the HK line is unhealthy.
+

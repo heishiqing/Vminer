@@ -31,7 +31,7 @@ Vminer is a desktop mining manager. Download the zip, unzip it, and double-click
 
 | Platform | Current version | Download | How to start |
 |---|---:|---|---|
-| Windows | v0.2.9 | [Download Vminer-v0.2.9.zip](https://github.com/heishiqing/Vminer/releases/download/v0.2.9/Vminer-v0.2.9.zip) | Unzip and double-click `Vminer.exe` |
+| Windows | v0.3.0 | [Download Vminer-v0.3.0.zip](https://github.com/heishiqing/Vminer/releases/download/v0.3.0/Vminer-v0.3.0.zip) | Unzip and double-click `Vminer.exe` |
 | macOS Apple Silicon | v0.0.1 | [Download Vminer-mac-v0.0.1.zip](https://github.com/heishiqing/Vminer/releases/download/mac-v0.0.1/Vminer-mac-v0.0.1.zip) | Unzip and double-click `Vminer.app` |
 
 macOS release page: [mac-v0.0.1](https://github.com/heishiqing/Vminer/releases/tag/mac-v0.0.1).
@@ -110,3 +110,4 @@ If you like Vminer, consider supporting the author on Afdian.
 
 - [Vbot-B](https://github.com/heishiqing/Vbot-B): Bilibili private message auto-reply bot.
 - [pearl-proxy](https://github.com/heishiqing/pearl-proxy): encrypted PRL proxy/relay software.
+
