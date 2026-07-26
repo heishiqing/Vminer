@@ -2,6 +2,22 @@
 
 [中文](README.md) | [English](README.en.md)
 
+## v0.3.1
+
+- 客户端调整为 PRL 专用版本，精简已下线功能与旧资源。
+- 更新动态内核列表，支持 PeakMiner 2.2.2 与 WildRig 0.49.6。
+- 恢复并更新压缩包内的中英文 TXT 使用说明。
+- 优化内核版本列表在线刷新、连接恢复和后台进程清理。
+- 优化静默模式、配置保存及中英文提示。
+
+English:
+
+- Focused the client on PRL and removed retired features and resources.
+- Updated the dynamic miner list with PeakMiner 2.2.2 and WildRig 0.49.6.
+- Restored and refreshed the Chinese and English TXT user guides in the package.
+- Improved online miner-list refresh, reconnect behavior, and background-process cleanup.
+- Improved silent mode, configuration persistence, and bilingual messages.
+
 ## v0.3.0
 
 - 优化 F2Pool 用户名模式下的份额处理和连接恢复。
@@ -21,7 +37,6 @@ English:
 - Improved Windows security-entry wording and configuration persistence.
 ## v0.2.9
 
-- Windows 版新增 BTX 挖矿支持，首期支持 LuckyPool BTX 与 SRBMiner 3.4.3。
 - 新增 PeakMiner 2.0.0，并按矿池兼容性自动筛选可用内核。
 - 优化断线、长时间无任务和无有效份额时的自动恢复，降低慢份额矿池误判。
 - 完善钱包/用户名、矿池登录、内核下载、显卡与网络异常的中英文诊断提示。
@@ -31,33 +46,12 @@ English:
 
 English:
 
-- Added BTX mining to the Windows edition, initially supporting LuckyPool BTX with SRBMiner 3.4.3.
 - Added PeakMiner 2.0.0 with pool-aware compatibility filtering.
 - Improved recovery from disconnects, prolonged no-job states, and no-valid-share states while reducing false positives on slow-share pools.
 - Added clearer bilingual diagnostics for wallet/username, pool login, miner download, GPU, and network errors.
 - Fixed client exits caused by certain Windows graphics rendering failures.
 - Improved configuration persistence and cyber-cafe diskless deployment.
 - Improved price caching and pool information display.
-
-## mac-v0.0.1
-
-- 发布 Vminer macOS BTX 初始版本。
-- 支持 Apple Silicon macOS 设备。
-- 默认使用加密代理模式连接 minebtx 矿池。
-- 用户钱包默认留空，首次运行后由用户自行填写。
-- 支持中文/英文界面、开机启动、启动后自动挖矿、矿池算力/份额同步和 BTX/USDT 价格显示。
-- 悬浮窗默认关闭。
-- 当前内核：`dexbtx-miner 0.4.20`。
-
-English:
-
-- Released the first Vminer macOS BTX build.
-- Supports Apple Silicon macOS devices.
-- Uses encrypted proxy mode by default for the minebtx pool.
-- Ships with an empty user wallet; users fill in their own wallet on first run.
-- Supports Chinese/English UI, launch at login, auto mine after app launch, pool-side hashrate/share sync, and BTX/USDT price display.
-- Floating window is off by default.
-- Current miner kernel: `dexbtx-miner 0.4.20`.
 
 ## v0.2.8
 
@@ -84,4 +78,3 @@ English:
 - Fixed a missing signed-profile verification entry for F2Pool / SRBMiner.
 - Improved on-demand kernel downloads through pinned public 443 HTTPS.
 - Improved backup-line handling and download logs for better recovery when the HK line is unhealthy.
-
