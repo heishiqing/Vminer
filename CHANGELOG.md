@@ -2,6 +2,22 @@
 
 [中文](README.md) | [English](README.en.md)
 
+## v0.3.2
+
+- 修复部分长时间运行场景下连接恢复不完整的问题。
+- 修复在线更新准备阶段的文件占用问题，并改进更新下载源切换。
+- 优化挖矿内核按需下载、备用源切换和下载日志提示。
+- 更新动态内核列表，支持 PeakMiner 2.4.2 与 SRBMiner 3.4.7。
+- 优化钱包/用户名模式诊断与中英文错误提示。
+
+English:
+
+- Fixed incomplete connection recovery in some long-running scenarios.
+- Fixed file-lock handling during update preparation and improved update-source fallback.
+- Improved on-demand miner downloads, fallback switching, and download diagnostics.
+- Updated the dynamic miner list with PeakMiner 2.4.2 and SRBMiner 3.4.7.
+- Improved wallet/username diagnostics and bilingual error messages.
+
 ## v0.3.1
 
 - 客户端调整为 PRL 专用版本，精简已下线功能与旧资源。

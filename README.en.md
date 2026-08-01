@@ -28,7 +28,7 @@ Vminer is a Windows desktop mining manager for PRL (Pearl). Download the zip, un
 
 | Platform | Current version | Download | How to start |
 |---|---:|---|---|
-| Windows | v0.3.1 | [Download Vminer-v0.3.1.zip](https://github.com/heishiqing/Vminer/releases/download/v0.3.1/Vminer-v0.3.1.zip) | Unzip and double-click `Vminer.exe` |
+| Windows | v0.3.2 | [Download Vminer-v0.3.2.zip](https://github.com/heishiqing/Vminer/releases/download/v0.3.2/Vminer-v0.3.2.zip) | Unzip and double-click `Vminer.exe` |
 
 The package includes `使用说明.txt` and `User Guide.txt`.
 
@@ -48,11 +48,11 @@ The package includes `使用说明.txt` and `User Guide.txt`.
 
 | Miner | Current version | Supported PRL pools |
 |---|---:|---|
-| SRBMiner | 3.4.6 | LuckyPool, HeroMiners, Kryptex, 2Miners, F2Pool |
+| SRBMiner | 3.4.7 | LuckyPool, HeroMiners, Kryptex, 2Miners, F2Pool |
 | AlphaMiner | 1.7.7 | AlphaPool |
 | WildRig | 0.49.6 | PearlHash |
 | TW pearl-gpu | 3.2.2 | LuckyPool, HeroMiners, Kryptex, 2Miners, F2Pool, PearlFortune |
-| PeakMiner | 2.2.2 | LuckyPool, HeroMiners, Kryptex, AlphaPool, F2Pool, 2Miners |
+| PeakMiner | 2.4.2 | LuckyPool, HeroMiners, Kryptex, AlphaPool, F2Pool, 2Miners |
 
 Miner versions are provided dynamically through a signed server manifest. Open the version dropdown to refresh the available versions; older builds remain selectable when needed for compatibility.
 

@@ -28,7 +28,7 @@ Vminer 是面向 PRL（Pearl）的 Windows 桌面挖矿管理工具。下载压�
 
 | 系统 | 当前版本 | 下载 | 启动方式 |
 |---|---:|---|---|
-| Windows | v0.3.1 | [下载 Vminer-v0.3.1.zip](https://github.com/heishiqing/Vminer/releases/download/v0.3.1/Vminer-v0.3.1.zip) | 解压后双击根目录 `Vminer.exe` |
+| Windows | v0.3.2 | [下载 Vminer-v0.3.2.zip](https://github.com/heishiqing/Vminer/releases/download/v0.3.2/Vminer-v0.3.2.zip) | 解压后双击根目录 `Vminer.exe` |
 
 压缩包内包含 `使用说明.txt` 和 `User Guide.txt`。
 
@@ -48,11 +48,11 @@ Vminer 是面向 PRL（Pearl）的 Windows 桌面挖矿管理工具。下载压�
 
 | 挖矿内核 | 当前版本 | PRL 适配矿池 |
 |---|---:|---|
-| SRBMiner | 3.4.6 | LuckyPool、HeroMiners、Kryptex、2Miners、F2Pool |
+| SRBMiner | 3.4.7 | LuckyPool、HeroMiners、Kryptex、2Miners、F2Pool |
 | AlphaMiner | 1.7.7 | AlphaPool |
 | WildRig | 0.49.6 | PearlHash |
 | TW pearl-gpu | 3.2.2 | LuckyPool、HeroMiners、Kryptex、2Miners、F2Pool、PearlFortune |
-| PeakMiner | 2.2.2 | LuckyPool、HeroMiners、Kryptex、AlphaPool、F2Pool、2Miners |
+| PeakMiner | 2.4.2 | LuckyPool、HeroMiners、Kryptex、AlphaPool、F2Pool、2Miners |
 
 内核版本由服务器签名列表动态提供，客户端打开版本下拉框即可刷新可用版本；旧版本会按兼容性需要保留。
 
