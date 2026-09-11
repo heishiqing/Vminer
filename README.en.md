@@ -9,6 +9,7 @@
 [![Release](https://img.shields.io/github/v/release/heishiqing/Vminer?color=0E7490&label=latest)](https://github.com/heishiqing/Vminer/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/heishiqing/Vminer/total?color=F59E0B)](https://github.com/heishiqing/Vminer/releases)
 [![QQ Group](https://img.shields.io/badge/QQ_Group-245770181-12B7F5)](#)
+[![Discord](https://img.shields.io/badge/Discord-Join_us-5865F2?logo=discord&logoColor=white)](https://discord.gg/XYwrTWjHGE)
 
 [中文](README.md) | [English](README.en.md)
 
@@ -69,6 +70,7 @@ Miner versions are provided dynamically through a signed server manifest. Open t
 | Channel | Link |
 |---|---|
 | QQ Group | **245770181** |
+| Discord | [Join the Vminer community](https://discord.gg/XYwrTWjHGE) |
 | GitHub Issues | [Open an issue](https://github.com/heishiqing/Vminer/issues) |
 | Changelog | [CHANGELOG.md](CHANGELOG.md) |
 

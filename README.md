@@ -9,6 +9,7 @@
 [![Release](https://img.shields.io/github/v/release/heishiqing/Vminer?color=0E7490&label=latest)](https://github.com/heishiqing/Vminer/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/heishiqing/Vminer/total?color=F59E0B)](https://github.com/heishiqing/Vminer/releases)
 [![QQ Group](https://img.shields.io/badge/QQ_群-245770181-12B7F5)](#)
+[![Discord](https://img.shields.io/badge/Discord-加入社区-5865F2?logo=discord&logoColor=white)](https://discord.gg/XYwrTWjHGE)
 
 [中文](README.md) | [English](README.en.md)
 
@@ -69,6 +70,7 @@ Vminer 是面向 PRL（Pearl）的 Windows 桌面挖矿管理工具。下载压�
 | 渠道 | 入口 |
 |---|---|
 | QQ 群 | **245770181** |
+| Discord | [加入 Vminer 社区](https://discord.gg/XYwrTWjHGE) |
 | GitHub Issues | [提交 issue](https://github.com/heishiqing/Vminer/issues) |
 | 更新日志 | [CHANGELOG.md](CHANGELOG.md) |
 
