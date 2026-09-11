@@ -4,14 +4,14 @@
 
 # Vminer
 
-### Windows PRL 挖矿客户端，解压即用
+### Windows 原生多币种 GPU 挖矿客户端,解压即用
 
 [![Release](https://img.shields.io/github/v/release/heishiqing/Vminer?color=0E7490&label=latest)](https://github.com/heishiqing/Vminer/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/heishiqing/Vminer/total?color=F59E0B)](https://github.com/heishiqing/Vminer/releases)
-[![QQ Group](https://img.shields.io/badge/QQ_群-245770181-12B7F5)](#)
 [![Discord](https://img.shields.io/badge/Discord-加入社区-5865F2?logo=discord&logoColor=white)](https://discord.gg/XYwrTWjHGE)
+[![QQ Group](https://img.shields.io/badge/QQ_群-245770181-12B7F5)](#交流与反馈)
 
-[中文](README.md) | [English](README.en.md)
+[中文](README.md) | [English](README.en.md) · 官网 [www.vminers.com](https://www.vminers.com/)
 
 </div>
 
@@ -19,7 +19,7 @@
 
 ## Vminer 是什么
 
-Vminer 是面向 PRL（Pearl）的 Windows 桌面挖矿管理工具。下载压缩包、解压、双击程序即可使用，主要面向 NVIDIA 显卡，提供多矿池、多挖矿内核、连接检测、状态监控和矿池信息查询。
+Vminer 是 Windows 原生的多币种 GPU 挖矿客户端,目前支持 **PRL(Pearl)** 与 **XTM(Tari)**,更多币种陆续接入。下载压缩包、解压、双击即可使用,无需 WSL2、Docker 或命令行。选好矿池后,客户端会自动匹配可用的挖矿内核,首次使用时按需下载并校验。
 
 <div align="center">
   <img src="docs/screenshot.png" width="820" alt="Vminer 控制台" />
@@ -27,50 +27,68 @@ Vminer 是面向 PRL（Pearl）的 Windows 桌面挖矿管理工具。下载压�
 
 ## 下载
 
-| 系统 | 当前版本 | 下载 | 启动方式 |
-|---|---:|---|---|
-| Windows | v0.3.2 | [下载 Vminer-v0.3.2.zip](https://github.com/heishiqing/Vminer/releases/download/v0.3.2/Vminer-v0.3.2.zip) | 解压后双击根目录 `Vminer.exe` |
+**[下载最新版 →](https://github.com/heishiqing/Vminer/releases/latest)**
 
-压缩包内包含 `使用说明.txt` 和 `User Guide.txt`。
-
-## Windows 版功能
-
-- 一键挖矿：填写钱包或矿池用户名、选择矿池、点击开始。
-- 多矿池：支持 AlphaPool、LuckyPool、F2Pool、HeroMiners、Kryptex、2Miners、PearlFortune、PearlHash。
-- 多内核：支持 SRBMiner、AlphaMiner、WildRig、TW pearl-gpu、PeakMiner，按所选矿池自动匹配，并从服务器签名列表获取可用版本。
-- 状态显示：在线状态、显卡数量、算力、份额、拒绝份额、运行日志。
-- 稳定恢复：优化断线、长时间无任务和无有效份额时的自动恢复，并降低慢份额矿池的误判。
-- 明确诊断：钱包/用户名、矿池登录、内核下载、显卡和网络异常提供中英文提示。
-- 相关网站：一键打开官网、钱包、区块浏览器、矿池和交易所等链接。
-- 自动运行：支持开机启动、软件启动后自动挖矿。
-- 网吧无盘：支持配置随客户端目录保存，便于复制到母盘。
-
-## Windows 内核适配列表
-
-| 挖矿内核 | 当前版本 | PRL 适配矿池 |
-|---|---:|---|
-| SRBMiner | 3.4.7 | LuckyPool、HeroMiners、Kryptex、2Miners、F2Pool |
-| AlphaMiner | 1.7.7 | AlphaPool |
-| WildRig | 0.49.6 | PearlHash |
-| TW pearl-gpu | 3.2.2 | LuckyPool、HeroMiners、Kryptex、2Miners、F2Pool、PearlFortune |
-| PeakMiner | 2.4.2 | LuckyPool、HeroMiners、Kryptex、AlphaPool、F2Pool、2Miners |
-
-内核版本由服务器签名列表动态提供，客户端打开版本下拉框即可刷新可用版本；旧版本会按兼容性需要保留。
+- 系统要求:Windows 10 / 11 64 位,一张独立 NVIDIA 显卡(N 卡)。
+- 解压后双击根目录的 `Vminer.exe` 启动。
+- 压缩包内附 `使用说明.txt` 和 `User Guide.txt`。
+- 安装包不带挖矿内核,内核在你第一次选用时才下载,并校验文件哈希,所以包很小。
+- 请只从本仓库 Releases 或官网 [www.vminers.com](https://www.vminers.com/) 下载,可用发布页给出的 SHA-256 校验文件。
 
 ## 快速开始
 
-1. 下载对应系统的压缩包。
-2. 解压到本地文件夹。
-3. 双击启动程序。
-4. 填写钱包地址和矿工名。
-5. 选择矿池和连接方式，点击开始挖矿。
+1. 下载并解压,双击 `Vminer.exe`。
+2. 选择币种和矿池,客户端会自动筛出这个矿池能用的内核。
+3. 填写你自己对应币种的钱包地址(Kryptex 也可以填用户名)。
+4. 点击「开始」,首页即可看到算力、份额和收益。
+
+## 主要功能
+
+- **多币种**:PRL 与 XTM,下拉菜单直接切换。
+- **多矿池、多内核自动匹配**:先选矿池,客户端自动筛出可用内核;部分矿池只能用自家官方内核,客户端已限定好。
+- **内核版本在线更新**:内核版本由服务器签名清单提供,下拉框显示各内核当前版本,无需手工放文件。
+- **实时监控**:总算力、份额、矿池余额、币价;每张显卡单独显示算力、温度和功耗。
+- **算力 / 收益查询**:在线查询站 [stats.vminers.com](https://stats.vminers.com/) 输入钱包,查看名下所有矿机的算力、在线状态和收益。
+- **功耗与风扇**:可设功耗墙和风扇,重启后自动重新应用。
+- **数据全程加密**:客户端与服务器之间的通信全程加密传输。
+- **自动更新**:默认开启;下载走主备两条线路,失败自动切换,并校验文件完整性。
+- **起挖自检**:启动前检查显卡驱动、杀毒软件拦截和网络,有问题直接提示。
+- **后台运行**:开机自启、关闭后隐藏到托盘、全局热键 `Ctrl+Alt+V` 呼出。
+- **网吧无盘**:完整配置可随客户端目录复制到母盘,新机器自动读取矿池和内核等设置。
+- **静默模式**:电脑空闲时才在后台运行,一动鼠标键盘立刻停下、把显卡让出来。
+
+## 支持的矿池与内核
+
+| 币种 | 矿池 | 挖矿内核 |
+|---|---|---|
+| PRL | AlphaPool | AlphaMiner / PeakMiner |
+| PRL | HeroMiners | SRBMiner / TW-Pearl-Miner / PeakMiner |
+| PRL | Kryptex | SRBMiner / TW-Pearl-Miner / PeakMiner |
+| PRL | LuckyPool | SRBMiner / TW-Pearl-Miner / PeakMiner |
+| PRL | PEARLSKI | PEARLSKI 官方内核 |
+| PRL | PearlHash | WildRig |
+| XTM | Kryptex | lolMiner |
+
+矿池和内核列表以客户端内为准,服务器会通过签名清单在线更新,新增矿池或内核版本时一般无需重新下载客户端。
+
+## 费用
+
+Vminer 免费下载;**没有多余手续费,仅收取内核的 2%**。收益直接进你自己的钱包。
+
+## 常见问题
+
+- **会被杀毒软件误报吗?** 这类算力软件有时会被杀毒软件的启发式规则误报。如遇拦截,把 Vminer 加入信任列表即可。
+- **客户端显示的份额和矿池后台对不上?** 两边统计口径不同(动态难度、统计窗口、延迟等),**以矿池后台入账为准**。
+- **需要提供私钥吗?** 不需要。挖矿只需要钱包**地址**。任何索要私钥、助记词或让你转币的,都是骗子。
 
 ## 交流与反馈
 
 | 渠道 | 入口 |
 |---|---|
-| QQ 群 | **245770181** |
 | Discord | [加入 Vminer 社区](https://discord.gg/XYwrTWjHGE) |
+| QQ 群 | **245770181** |
+| 官网 | [www.vminers.com](https://www.vminers.com/) |
+| 算力查询 | [stats.vminers.com](https://stats.vminers.com/) |
 | GitHub Issues | [提交 issue](https://github.com/heishiqing/Vminer/issues) |
 | 更新日志 | [CHANGELOG.md](CHANGELOG.md) |
 
@@ -80,7 +98,7 @@ Vminer 是面向 PRL（Pearl）的 Windows 桌面挖矿管理工具。下载压�
 
 ## 支持作者
 
-如果喜欢本软件，可以助力作者发电。
+如果喜欢本软件,可以助力作者发电。
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/heishiqing/Vbot-B/main/static/afdian.jpg" width="240" alt="爱发电 - heishiqing" />
@@ -88,5 +106,5 @@ Vminer 是面向 PRL（Pearl）的 Windows 桌面挖矿管理工具。下载压�
 
 ## 作者其他项目
 
-- [Vbot-B](https://github.com/heishiqing/Vbot-B)：B 站私信自动回复机器人。
-- [pearl-proxy](https://github.com/heishiqing/pearl-proxy)：PRL 加密转发软件。
+- [Vbot-B](https://github.com/heishiqing/Vbot-B):B 站私信自动回复机器人。
+- [pearl-proxy](https://github.com/heishiqing/pearl-proxy):PRL 加密转发软件。
