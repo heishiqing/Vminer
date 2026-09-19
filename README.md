@@ -6,7 +6,7 @@
 
 ### Windows 原生多币种 GPU 挖矿客户端 · 解压即用
 
-**PRL（Pearl） · QTC（Quantus）**　｜　也支持 XTM（Tari）
+**PRL（Pearl） · QTC（Quantus）**　｜　也支持 XTM（Tari）　｜　N 卡 / A 卡
 
 [![Release](https://img.shields.io/github/v/release/heishiqing/Vminer?color=0E7490&label=latest)](https://github.com/heishiqing/Vminer/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/heishiqing/Vminer/total?color=F59E0B)](https://github.com/heishiqing/Vminer/releases)
@@ -27,15 +27,22 @@ Vminer 是 Windows 原生的多币种 GPU 挖矿客户端,主打 **PRL（Pearl�
   <img src="docs/screenshot.png" width="820" alt="Vminer 控制台" />
 </div>
 
-> 🌙 **静默模式** —— 电脑空闲时才在后台挖矿,一动鼠标键盘立刻停下、把显卡让出来,不打扰你正常用。
+> 🎮 **网吧模式** —— 一个总开关,三种让位方式:全力(一直挖)、规避(名单里的游戏一开就让出显卡)、智能(看显卡占用,游戏一开就让,看网页视频照常挖)。开机后台静默运行,快捷键呼出;挖矿时可自动调低功耗,让给游戏时恢复 100%。
 >
 > 🖥️ **网吧无盘** —— 配置随客户端目录写进母盘并持久化,分机开机自动读回钱包直接开挖,母盘装一次全场即挖。
+>
+> 📱 **群控** —— 在客户端登录账号,就能用手机、平板、电脑打开 [app.vminers.com](https://app.vminers.com/) 远程批量管理全场矿机。
+
+<div align="center">
+  <img src="docs/fleet.png" width="640" alt="群控网页(演示数据)" />　<img src="docs/fleet-phone.png" width="170" alt="群控手机版(演示数据)" />
+  <br><sub>群控网页 · 电脑与手机(演示数据)</sub>
+</div>
 
 ## ⬇️ 下载
 
 **[下载最新版 →](https://github.com/heishiqing/Vminer/releases/latest)**
 
-- 系统要求:Windows 10 / 11 64 位,一张独立 NVIDIA 显卡(N 卡)。
+- 系统要求:Windows 10 / 11 64 位,一张独立显卡:N 卡(NVIDIA)或 A 卡(AMD)。A 卡目前通过 SRBMiner 挖 PRL / QTC(Kryptex、HeroMiners、LuckyPool),通过 lolMiner 挖 XTM。
 - 解压后双击根目录的 `Vminer.exe` 启动。
 - 压缩包内附 `使用说明.txt` 和 `User Guide.txt`。
 - 安装包不带挖矿内核,内核在你第一次选用时才下载并校验文件哈希,所以包很小。
@@ -54,26 +61,27 @@ Vminer 是 Windows 原生的多币种 GPU 挖矿客户端,主打 **PRL（Pearl�
 - 🔀 **多矿池、多内核自动匹配** —— 先选矿池,客户端自动筛出可用内核;部分矿池只能用自家官方内核,客户端已限定好。
 - 🔄 **内核版本在线更新** —— 内核版本由服务器签名清单提供,下拉框显示各内核当前版本,无需手工放文件。
 - 📊 **实时监控** —— 总算力、份额、矿池余额、币价;每张显卡单独显示算力、温度和功耗。
-- 🔎 **算力 / 收益查询** —— 在线查询站 [stats.vminers.com](https://stats.vminers.com/) 输入钱包,查看名下所有矿机的算力、在线状态和收益。
-- 🌡️ **功耗与风扇** —— 可设功耗墙和风扇,重启后自动重新应用。
+- 📱 **群控** —— 登录 [app.vminers.com](https://app.vminers.com/),按币种或矿池分组查看全部矿机的算力、温度、功耗和在线状态;批量开始 / 停止、换矿池 / 内核 / 币种 / 钱包、调功耗风扇、远程重启或关机;网页上的操作,客户端界面同步变化。
+- 🎛️ **超频** —— 功耗、风扇、核心、显存一页调好;温度自动联动(温度高了自动降功耗、加风扇,凉下来逐档恢复);同型号显卡一起改,一键恢复默认。超频调节支持 N 卡,A 卡可看实时状态。
+- 🛟 **掉驱动自动重启** —— 可选开启:确认显卡掉驱动、挖矿停了之后自动重启电脑,重启后自动接着挖;有次数上限,不会反复重启。N 卡 / A 卡通用。
 - 🔒 **数据全程加密** —— 客户端与服务器之间的通信全程加密传输。
 - ♻️ **自动更新** —— 默认开启;下载走主备两条线路,失败自动切换,并校验文件完整性。
 - 🩺 **起挖自检** —— 启动前检查显卡驱动、杀毒软件拦截和网络,有问题直接提示。
-- 🖥️ **后台运行** —— 开机自启、关闭后隐藏到托盘、全局热键 `Ctrl+Alt+V` 呼出。
+- 🖥️ **后台运行** —— 开机自启、启动后自动挖矿、关闭后隐藏到托盘,快捷键呼出界面。
 
 ## ⛏️ 支持的矿池与内核
 
-| 币种 | 矿池 | 挖矿内核 |
-|---|---|---|
-| **PRL** | AlphaPool | AlphaMiner / PeakMiner |
-| **PRL** | HeroMiners | SRBMiner / TW-Pearl-Miner / PeakMiner |
-| **PRL** | Kryptex | SRBMiner / TW-Pearl-Miner / PeakMiner |
-| **PRL** | LuckyPool | SRBMiner / TW-Pearl-Miner / PeakMiner |
-| **PRL** | PEARLSKI | PEARLSKI 官方内核 |
-| **PRL** | PearlHash | WildRig |
-| **QTC** | Kryptex | SRBMiner |
-| **QTC** | LuckyPool | SRBMiner |
-| **XTM** | Kryptex | lolMiner |
+| 币种 | 矿池 | 挖矿内核 | A 卡 |
+|---|---|---|:---:|
+| **PRL** | AlphaPool | AlphaMiner / PeakMiner | — |
+| **PRL** | HeroMiners | SRBMiner / TW-Pearl-Miner / PeakMiner | ✓ |
+| **PRL** | Kryptex | SRBMiner / TW-Pearl-Miner / PeakMiner | ✓ |
+| **PRL** | LuckyPool | SRBMiner / TW-Pearl-Miner / PeakMiner | ✓ |
+| **PRL** | PEARLSKI | PEARLSKI 官方内核 | — |
+| **PRL** | PearlHash | WildRig | — |
+| **QTC** | Kryptex | SRBMiner | ✓ |
+| **QTC** | LuckyPool | SRBMiner | ✓ |
+| **XTM** | Kryptex | lolMiner | ✓ |
 
 矿池和内核列表以客户端内为准,服务器会通过签名清单在线更新,新增矿池或内核版本时一般无需重新下载客户端。
 
@@ -94,7 +102,7 @@ Vminer 免费下载;**没有多余手续费,仅收取内核的 2%**。收益直�
 | Discord | [加入 Vminer 社区](https://discord.gg/XYwrTWjHGE) |
 | QQ 群 | **245770181** |
 | 官网 | [www.vminers.com](https://www.vminers.com/) |
-| 算力查询 | [stats.vminers.com](https://stats.vminers.com/) |
+| 群控 | [app.vminers.com](https://app.vminers.com/) |
 | GitHub Issues | [提交 issue](https://github.com/heishiqing/Vminer/issues) |
 | 更新日志 | [CHANGELOG.md](CHANGELOG.md) |
 

@@ -2,6 +2,38 @@
 
 [中文](README.md) | [English](README.en.md)
 
+## v0.3.13
+
+- 网吧模式重做:一个总开关,全力 / 规避 / 智能三种让位方式;规避名单内置热门游戏并可自行增删;智能模式看显卡占用,看网页视频照常挖。开机后台静默运行,快捷键呼出;挖矿时可自动调低功耗,让给游戏时恢复 100%。
+- 性能调度:功耗、风扇、核心、显存一页调好,支持温度自动联动;同型号显卡一起改,一键恢复默认。
+- 群控:在客户端登录账号,即可在 app.vminers.com 用手机、平板、电脑远程批量管理矿机;网页上的操作,客户端界面同步变化。
+- 新增「显卡掉驱动后自动重启电脑」(系统设置):确认掉驱动、挖矿停了之后自动重启并接着挖,有次数上限;N 卡 / A 卡通用。
+- 支持 A 卡(AMD):SRBMiner 挖 PRL / QTC,lolMiner 挖 XTM。
+- 稳定性、兼容性与算力 / 数据显示的若干修复与改进。
+
+English:
+
+- Netbar mode rebuilt: one master switch with Full power / Avoid games / Smart; a built-in, editable list of popular games; Smart watches GPU load so browser video doesn't interrupt mining. Runs silently in the background from startup, shows with a hotkey; can lower power while mining and go back to 100% when a game has the GPU.
+- Performance page: power, fan, core and memory on one page, with an auto thermal link; same-model cards change together; one-click restore.
+- Fleet Control: sign in inside the client and manage rigs from a phone, tablet or computer at app.vminers.com; changes made on the web show up in the client.
+- New "Reboot automatically if a GPU driver crashes" (System Settings): once a driver crash is confirmed and mining has stopped, the PC reboots and resumes mining, with a limit; NVIDIA and AMD.
+- AMD GPU support: SRBMiner for PRL / QTC, lolMiner for XTM.
+- Stability, compatibility and hashrate / display fixes and improvements.
+
+## v0.3.10
+
+- 使用说明界面重做,排版与阅读更清晰。
+- 内核被杀毒软件拦截或删除时,日志会明确指出真实原因,并给出操作指引(含一键功能)。
+- 起挖失败时给出更明确的原因提示。
+- 稳定性、兼容性与算力 / 数据显示的若干修复与改进。
+
+English:
+
+- Redesigned in-app guide for clearer reading.
+- When antivirus blocks or deletes a mining engine, the log names the real cause and gives step-by-step fixes (with one-click actions).
+- Clearer reasons when mining fails to start.
+- Stability, compatibility and hashrate / display fixes and improvements.
+
 ## v0.3.9
 
 - 新增 XTM(Tari)挖矿支持(Kryptex 矿池 + lolMiner 内核)。默认仍是 PRL,出现第二个币种时才显示币种选择器,PRL 用户使用不受影响。
