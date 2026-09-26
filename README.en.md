@@ -75,12 +75,13 @@ Vminer is a native Windows multi-coin GPU mining client — primarily **PRL (Pea
 
 | Coin | Pool | Mining engines | AMD |
 |---|---|---|:---:|
-| **PRL** | AlphaPool | AlphaMiner / PeakMiner | — |
+| **PRL** | AlphaPool | AlphaMiner | — |
 | **PRL** | HeroMiners | SRBMiner / TW-Pearl-Miner / PeakMiner | ✓ |
 | **PRL** | Kryptex | SRBMiner / TW-Pearl-Miner / PeakMiner | ✓ |
 | **PRL** | LuckyPool | SRBMiner / TW-Pearl-Miner / PeakMiner | ✓ |
 | **PRL** | PEARLSKI | PEARLSKI official engine | — |
 | **PRL** | PearlHash | WildRig | — |
+| **PRL** | PearlFortune | SRBMiner / PeakMiner | — |
 | **QTC** | Kryptex | SRBMiner | ✓ |
 | **QTC** | LuckyPool | SRBMiner | ✓ |
 | **XTM** | Kryptex | lolMiner | ✓ |
