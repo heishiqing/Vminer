@@ -13,7 +13,6 @@
 [![Release](https://img.shields.io/github/v/release/heishiqing/Vminer?color=0E7490&label=latest)](https://github.com/heishiqing/Vminer/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/heishiqing/Vminer/total?color=F59E0B)](https://github.com/heishiqing/Vminer/releases)
 [![Discord](https://img.shields.io/badge/Discord-Join_us-5865F2?logo=discord&logoColor=white)](https://discord.gg/XYwrTWjHGE)
-[![QQ Group](https://img.shields.io/badge/QQ_Group-245770181-12B7F5)](#-community-and-feedback)
 
 [中文](README.md)　｜　[English](README.en.md)　·　Website [www.vminers.com](https://www.vminers.com/)
 
@@ -102,8 +101,7 @@ Vminer is free to download. **No extra fees — Vminer only takes the kernel's 2
 
 | Channel | Link |
 |---|---|
-| Discord | [Join the Vminer community](https://discord.gg/XYwrTWjHGE) |
-| QQ Group | **245770181** |
+| Discord | [Join the Vminer community](https://discord.gg/XYwrTWjHGE) (the only official support channel) |
 | Website | [www.vminers.com](https://www.vminers.com/) |
 | Fleet Control | [app.vminers.com](https://app.vminers.com/) |
 | GitHub Issues | [Open an issue](https://github.com/heishiqing/Vminer/issues) |
