@@ -11,7 +11,6 @@
 [![Release](https://img.shields.io/github/v/release/heishiqing/Vminer?color=0E7490&label=latest)](https://github.com/heishiqing/Vminer/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/heishiqing/Vminer/total?color=F59E0B)](https://github.com/heishiqing/Vminer/releases)
 [![Discord](https://img.shields.io/badge/Discord-加入社区-5865F2?logo=discord&logoColor=white)](https://discord.gg/XYwrTWjHGE)
-[![QQ Group](https://img.shields.io/badge/QQ_群-245770181-12B7F5)](#-交流与反馈)
 
 [中文](README.md)　｜　[English](README.en.md)　·　官网 [www.vminers.com](https://www.vminers.com/)
 
@@ -100,8 +99,7 @@ Vminer 免费下载;**没有多余手续费,仅收取内核的 2%**。收益直�
 
 | 渠道 | 入口 |
 |---|---|
-| Discord | [加入 Vminer 社区](https://discord.gg/XYwrTWjHGE) |
-| QQ 群 | **245770181** |
+| Discord | [加入 Vminer 社区](https://discord.gg/XYwrTWjHGE)(官方唯一交流与反馈渠道) |
 | 官网 | [www.vminers.com](https://www.vminers.com/) |
 | 群控 | [app.vminers.com](https://app.vminers.com/) |
 | GitHub Issues | [提交 issue](https://github.com/heishiqing/Vminer/issues) |
