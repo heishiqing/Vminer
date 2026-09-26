@@ -73,12 +73,13 @@ Vminer 是 Windows 原生的多币种 GPU 挖矿客户端,主打 **PRL（Pearl�
 
 | 币种 | 矿池 | 挖矿内核 | A 卡 |
 |---|---|---|:---:|
-| **PRL** | AlphaPool | AlphaMiner / PeakMiner | — |
+| **PRL** | AlphaPool | AlphaMiner | — |
 | **PRL** | HeroMiners | SRBMiner / TW-Pearl-Miner / PeakMiner | ✓ |
 | **PRL** | Kryptex | SRBMiner / TW-Pearl-Miner / PeakMiner | ✓ |
 | **PRL** | LuckyPool | SRBMiner / TW-Pearl-Miner / PeakMiner | ✓ |
 | **PRL** | PEARLSKI | PEARLSKI 官方内核 | — |
 | **PRL** | PearlHash | WildRig | — |
+| **PRL** | PearlFortune | SRBMiner / PeakMiner | — |
 | **QTC** | Kryptex | SRBMiner | ✓ |
 | **QTC** | LuckyPool | SRBMiner | ✓ |
 | **XTM** | Kryptex | lolMiner | ✓ |
